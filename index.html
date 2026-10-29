@@ -3,125 +3,249 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Brooklyn | Representação Comercial & Crédito</title>
+  <title>Brooklyn | Representações Comerciais</title>
+  <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts - Montserrat -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
   <script>
     tailwind.config = {
       theme: {
         extend: {
+          fontFamily: {
+            sans: ['Montserrat', 'sans-serif'],
+          },
           colors: {
-            brandDark: '#0b1120',
-            brandGold: '#eab308',
-            brandGoldHover: '#ca8a04'
+            bkDark: '#08080a',
+            bkCard: '#0f0f13',
+            bkBorder: '#23232b',
+            bkGold: '#f5b041',
+            bkGoldLight: '#fdebd0',
+            bkBronze: '#b87333',
+            bkSteel: '#8a929a',
           }
         }
       }
     }
   </script>
+  <style>
+    .gold-gradient-text {
+      background: linear-gradient(135deg, #ffffff 0%, #f7d08a 25%, #d49a37 60%, #aa6c25 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .gold-button {
+      background: linear-gradient(135deg, #d49a37 0%, #f7d08a 50%, #b87333 100%);
+      transition: all 0.3s ease;
+    }
+    .gold-button:hover {
+      background: linear-gradient(135deg, #f7d08a 0%, #fae5b9 50%, #d49a37 100%);
+      box-shadow: 0 0 25px rgba(212, 154, 55, 0.45);
+      transform: translateY(-2px);
+    }
+    .gold-border {
+      border: 1px solid rgba(212, 154, 55, 0.25);
+    }
+    .gold-border:hover {
+      border-color: rgba(212, 154, 55, 0.7);
+    }
+    .geometric-bg {
+      background-image: 
+        radial-gradient(circle at 10% 20%, rgba(212, 154, 55, 0.08) 0%, transparent 40%),
+        radial-gradient(circle at 90% 80%, rgba(138, 146, 154, 0.06) 0%, transparent 40%),
+        linear-gradient(135deg, #060608 0%, #0d0e12 100%);
+    }
+  </style>
 </head>
-<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-yellow-500 selection:text-black">
+<body class="bg-bkDark text-slate-100 font-sans antialiased selection:bg-[#d49a37] selection:text-black">
 
-  <!-- Cabeçalho -->
-  <header class="border-b border-slate-800 sticky top-0 bg-slate-950/90 backdrop-blur-md z-50">
+  <!-- Header / Navbar -->
+  <header class="border-b border-bkBorder/60 sticky top-0 bg-[#08080a]/95 backdrop-blur-md z-50">
     <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-      <a href="#" class="text-2xl font-black tracking-wider text-white">
-        BROOKLYN<span class="text-yellow-500">.</span>
+      
+      <a href="#" class="flex flex-col">
+        <span class="text-2xl font-black tracking-widest gold-gradient-text uppercase">
+          BROOKLYN
+        </span>
+        <span class="text-[9px] font-semibold tracking-[0.25em] text-slate-400 uppercase -mt-1">
+          REPRESENTAÇÕES COMERCIAIS
+        </span>
       </a>
-      <nav class="hidden md:flex gap-8 text-sm font-medium text-slate-300">
-        <a href="#solucoes" class="hover:text-yellow-400 transition">Soluções</a>
-        <a href="#diferenciais" class="hover:text-yellow-400 transition">Diferenciais</a>
-        <a href="#contato" class="hover:text-yellow-400 transition">Atendimento</a>
+
+      <nav class="hidden md:flex gap-8 text-xs font-semibold uppercase tracking-wider text-slate-300">
+        <a href="#solucoes" class="hover:text-amber-300 transition duration-200">Soluções</a>
+        <a href="#diferenciais" class="hover:text-amber-300 transition duration-200">Diferenciais</a>
+        <a href="#contato" class="hover:text-amber-300 transition duration-200">Contato</a>
       </nav>
-      <a href="https://wa.me/5562999999999?text=Olá,%20gostaria%20de%20fazer%20uma%20simulação!" 
+
+      <a href="https://wa.me/5562999999999?text=Olá,%20gostaria%20de%20falar%20com%20a%20Brooklyn%20Representações!" 
          target="_blank" 
-         class="bg-yellow-500 hover:bg-yellow-400 text-slate-950 font-bold px-4 py-2 rounded-lg text-sm transition flex items-center gap-2 shadow-md">
-        <i class="fa-brands fa-whatsapp text-base"></i> Falar com Consultor
+         class="gold-button text-black font-extrabold text-xs uppercase tracking-wider px-5 py-2.5 rounded shadow-lg flex items-center gap-2">
+        <i class="fa-brands fa-whatsapp text-sm"></i> Falar com Consultor
       </a>
     </div>
   </header>
 
-  <!-- Hero -->
-  <section class="max-w-5xl mx-auto px-6 py-20 md:py-28 text-center flex flex-col items-center">
-    <span class="inline-block px-3 py-1 text-xs font-semibold uppercase tracking-widest text-yellow-400 bg-yellow-500/10 rounded-full border border-yellow-500/20 mb-6">
-      Planeamento & Crédito Estruturado
-    </span>
-    <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight max-w-3xl leading-tight">
-      Acelere as suas conquistas com a <span class="text-yellow-400">Brooklyn</span>.
-    </h1>
-    <p class="mt-6 text-slate-400 text-lg max-w-2xl leading-relaxed">
-      Consultoria especializada em crédito inteligente, consórcios e soluções financeiras personalizadas para adquirir os seus bens sem juros abusivos.
-    </p>
-    <div class="mt-8 flex flex-col sm:flex-row gap-4">
-      <a href="https://wa.me/5562999999999?text=Olá,%20quero%20uma%20simulação!" target="_blank" class="px-7 py-3 rounded-lg bg-yellow-500 text-slate-950 font-bold hover:bg-yellow-400 transition shadow-lg">
-        Solicitar Simulação
-      </a>
-      <a href="#solucoes" class="px-7 py-3 rounded-lg border border-slate-700 hover:border-slate-500 font-semibold transition">
-        Ver Nossas Soluções
-      </a>
+  <!-- Hero Section -->
+  <section class="geometric-bg relative overflow-hidden py-24 md:py-36 border-b border-bkBorder/50">
+    <div class="max-w-5xl mx-auto px-6 text-center flex flex-col items-center relative z-10">
+      
+      <span class="inline-flex items-center gap-2 px-4 py-1.5 text-[11px] font-bold uppercase tracking-[0.2em] text-amber-200/90 bg-[#16161d] rounded-full gold-border mb-8 shadow-inner">
+        <span class="w-1.5 h-1.5 rounded-full bg-amber-400 animate-pulse"></span>
+        Assessoria de Crédito & Negócios
+      </span>
+
+      <h1 class="text-4xl md:text-6xl font-black tracking-tight leading-tight max-w-4xl">
+        Planejamento sólido e crédito inteligente com a <br class="hidden sm:inline"/>
+        <span class="gold-gradient-text">BROOKLYN</span>.
+      </h1>
+
+      <p class="mt-6 text-slate-400 text-base md:text-lg max-w-2xl font-normal leading-relaxed">
+        Especialistas em alavancagem patrimonial e representação de soluções de crédito estruturado. Realize a conquista de veículos, imóveis e novos projetos com segurança e excelência.
+      </p>
+
+      <div class="mt-10 flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
+        <a href="https://wa.me/5562999999999?text=Olá,%20quero%20solicitar%20uma%20simulação%20com%20a%20Brooklyn!" 
+           target="_blank" 
+           class="gold-button text-black font-extrabold uppercase tracking-wider text-xs px-8 py-4 rounded shadow-2xl">
+          Solicitar Simulação
+        </a>
+        <a href="#solucoes" 
+           class="px-8 py-4 rounded bg-bkCard/90 gold-border text-slate-200 hover:text-white font-bold text-xs uppercase tracking-wider transition">
+          Conhecer Portfólio
+        </a>
+      </div>
+
     </div>
   </section>
 
   <!-- Soluções -->
-  <section id="solucoes" class="max-w-6xl mx-auto px-6 py-16 border-t border-slate-900">
-    <div class="text-center mb-12">
-      <h2 class="text-3xl font-bold">Nossas Linhas de Crédito</h2>
-      <p class="text-slate-400 mt-2">Escolha a solução ideal para o seu objetivo</p>
+  <section id="solucoes" class="max-w-6xl mx-auto px-6 py-20">
+    <div class="text-center mb-16">
+      <h2 class="text-xs font-bold tracking-[0.3em] uppercase gold-gradient-text mb-2">Soluções Estruturadas</h2>
+      <p class="text-3xl font-extrabold tracking-tight">O que você deseja conquistar?</p>
+      <div class="w-16 h-0.5 bg-gradient-to-r from-transparent via-[#d49a37] to-transparent mx-auto mt-4"></div>
     </div>
 
-    <div class="grid md:grid-cols-3 gap-6">
-      <div class="p-6 rounded-xl bg-slate-900 border border-slate-800 hover:border-yellow-500/50 transition">
-        <div class="w-12 h-12 rounded-lg bg-yellow-500/10 flex items-center justify-center text-yellow-400 text-xl mb-4">
-          <i class="fa-solid fa-car"></i>
+    <div class="grid md:grid-cols-3 gap-8">
+      
+      <div class="bg-bkCard p-8 rounded-xl gold-border transition duration-300 flex flex-col justify-between group">
+        <div>
+          <div class="w-14 h-14 rounded-lg bg-black/60 gold-border flex items-center justify-center text-amber-400 text-2xl mb-6 group-hover:scale-105 transition">
+            <i class="fa-solid fa-car-side"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-3 tracking-wide">Linha Veículos</h3>
+          <p class="text-slate-400 text-sm leading-relaxed font-normal">
+            Condições exclusivas para automóveis leves, seminovos, utilitários, pesados e ampliação de frotas comerciais com planeamento e sem juros bancários convencionais.
+          </p>
         </div>
-        <h3 class="text-xl font-bold mb-2">Linha Veículos</h3>
-        <p class="text-slate-400 text-sm leading-relaxed">
-          Planos para carros novos, seminovos, utilitários e renovação de frotas com parcelas sob medida.
-        </p>
+        <div class="mt-6 pt-4 border-t border-bkBorder/60 flex items-center text-amber-400/90 text-xs font-bold tracking-wider uppercase">
+          Planos Customizados <i class="fa-solid fa-arrow-right ml-2 text-[10px]"></i>
+        </div>
       </div>
 
-      <div class="p-6 rounded-xl bg-slate-900 border border-slate-800 hover:border-yellow-500/50 transition">
-        <div class="w-12 h-12 rounded-lg bg-yellow-500/10 flex items-center justify-center text-yellow-400 text-xl mb-4">
-          <i class="fa-solid fa-house"></i>
+      <div class="bg-bkCard p-8 rounded-xl gold-border transition duration-300 flex flex-col justify-between group">
+        <div>
+          <div class="w-14 h-14 rounded-lg bg-black/60 gold-border flex items-center justify-center text-amber-400 text-2xl mb-6 group-hover:scale-105 transition">
+            <i class="fa-solid fa-building"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-3 tracking-wide">Linha Imóveis</h3>
+          <p class="text-slate-400 text-sm leading-relaxed font-normal">
+            Aquisição de imóveis urbanos e rurais, terrenos residenciais, salas comerciais, galpões industriais ou recursos para construção e reforma planeada.
+          </p>
         </div>
-        <h3 class="text-xl font-bold mb-2">Linha Imóveis</h3>
-        <p class="text-slate-400 text-sm leading-relaxed">
-          Compre casa, apartamento, lote ou realize construções e reformas com prazos alargados.
-        </p>
+        <div class="mt-6 pt-4 border-t border-bkBorder/60 flex items-center text-amber-400/90 text-xs font-bold tracking-wider uppercase">
+          Prazos Alargados <i class="fa-solid fa-arrow-right ml-2 text-[10px]"></i>
+        </div>
       </div>
 
-      <div class="p-6 rounded-xl bg-slate-900 border border-slate-800 hover:border-yellow-500/50 transition">
-        <div class="w-12 h-12 rounded-lg bg-yellow-500/10 flex items-center justify-center text-yellow-400 text-xl mb-4">
-          <i class="fa-solid fa-chart-line"></i>
+      <div class="bg-bkCard p-8 rounded-xl gold-border transition duration-300 flex flex-col justify-between group">
+        <div>
+          <div class="w-14 h-14 rounded-lg bg-black/60 gold-border flex items-center justify-center text-amber-400 text-2xl mb-6 group-hover:scale-105 transition">
+            <i class="fa-solid fa-chart-line"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-3 tracking-wide">Alavancagem & Capital</h3>
+          <p class="text-slate-400 text-sm leading-relaxed font-normal">
+            Estratégias de investimento, capital de giro planeado, renovação de maquinários, expansão corporativa e procedimentos estéticos com total controlo financeiro.
+          </p>
         </div>
-        <h3 class="text-xl font-bold mb-2">Investimentos & Serviços</h3>
-        <p class="text-slate-400 text-sm leading-relaxed">
-          Alavancagem patrimonial, procedimentos estéticos, viagens e investimentos comerciais.
-        </p>
+        <div class="mt-6 pt-4 border-t border-bkBorder/60 flex items-center text-amber-400/90 text-xs font-bold tracking-wider uppercase">
+          Alta Eficiência <i class="fa-solid fa-arrow-right ml-2 text-[10px]"></i>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Diferenciais Metálicos -->
+  <section id="diferenciais" class="border-y border-bkBorder/60 bg-[#0a0a0e] py-20">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="grid md:grid-cols-3 gap-10 text-center">
+        
+        <div class="p-6">
+          <div class="text-3xl text-amber-400 mb-4">
+            <i class="fa-solid fa-award"></i>
+          </div>
+          <h4 class="font-bold text-lg mb-2 text-white">Transparência & Conformidade</h4>
+          <p class="text-slate-400 text-sm font-normal">Atuação alinhada com as melhores práticas de mercado e segurança jurídica contratual do início à contemplação.</p>
+        </div>
+
+        <div class="p-6">
+          <div class="text-3xl text-amber-400 mb-4">
+            <i class="fa-solid fa-handshake-angle"></i>
+          </div>
+          <h4 class="font-bold text-lg mb-2 text-white">Consultoria Especializada</h4>
+          <p class="text-slate-400 text-sm font-normal">Atendimento consultivo e próximo para entender sua capacidade financeira e traçar a rota mais rápida para sua contemplação.</p>
+        </div>
+
+        <div class="p-6">
+          <div class="text-3xl text-amber-400 mb-4">
+            <i class="fa-solid fa-coins"></i>
+          </div>
+          <h4 class="font-bold text-lg mb-2 text-white">Economia Inteligente</h4>
+          <p class="text-slate-400 text-sm font-normal">Livre das taxas elevadas de financiamentos tradicionais, priorizando o custo-benefício e a preservação do seu capital.</p>
+        </div>
+
       </div>
     </div>
   </section>
 
-  <!-- Contacto -->
-  <section id="contato" class="max-w-4xl mx-auto px-6 py-16 text-center">
-    <div class="bg-slate-900/80 border border-slate-800 p-10 rounded-2xl">
-      <h2 class="text-3xl font-extrabold">Pronto para dar o próximo passo?</h2>
-      <p class="text-slate-400 mt-3 max-w-xl mx-auto text-sm">
-        Fale connosco agora mesmo e receba um plano de crédito planeado exclusivo para o seu perfil.
+  <!-- Chamada WhatsApp -->
+  <section id="contato" class="max-w-4xl mx-auto px-6 py-24 text-center">
+    <div class="bg-gradient-to-b from-[#121217] to-bkDark p-10 md:p-14 rounded-2xl gold-border shadow-2xl relative">
+      
+      <h2 class="text-3xl md:text-4xl font-black tracking-tight mb-4">
+        Pronto para simular seu planeamento?
+      </h2>
+      <p class="text-slate-400 max-w-xl mx-auto text-sm md:text-base font-normal mb-8">
+        A nossa equipa de consultores está disponível para desenhar uma simulação sob medida com as melhores opções vigentes.
       </p>
-      <div class="mt-8 flex justify-center">
-        <a href="https://wa.me/5562999999999?text=Olá,%20gostaria%20de%20fazer%20uma%20simulação!" 
+
+      <div class="flex justify-center">
+        <a href="https://wa.me/5562999999999?text=Olá,%20gostaria%20de%20solicitar%20uma%20simulação%20com%20a%20Brooklyn%20Representações!" 
            target="_blank" 
-           class="inline-flex items-center gap-3 px-8 py-4 rounded-xl bg-emerald-600 hover:bg-emerald-500 font-bold text-white shadow-lg transition">
-          <i class="fa-brands fa-whatsapp text-2xl"></i> Conversar pelo WhatsApp
+           class="gold-button text-black font-extrabold uppercase tracking-wider text-sm px-10 py-4 rounded shadow-2xl inline-flex items-center gap-3">
+          <i class="fa-brands fa-whatsapp text-xl"></i> Iniciar Atendimento via WhatsApp
         </a>
       </div>
+      
     </div>
   </section>
 
   <!-- Rodapé -->
-  <footer class="border-t border-slate-900 py-8 text-center text-xs text-slate-500">
-    <p>© 2026 Brooklyn Representação Comercial. Todos os direitos reservados.</p>
+  <footer class="border-t border-bkBorder/60 py-10 bg-black text-center text-xs text-slate-500">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
+      <div class="text-left">
+        <span class="font-bold text-slate-400 gold-gradient-text tracking-wider uppercase">BROOKLYN</span>
+        <span class="block text-[10px] text-slate-500 uppercase tracking-widest mt-0.5">Representações Comerciais</span>
+      </div>
+      <p>© 2026 Brooklyn Representações Comerciais. Todos os direitos reservados.</p>
+    </div>
   </footer>
 
 </body>
