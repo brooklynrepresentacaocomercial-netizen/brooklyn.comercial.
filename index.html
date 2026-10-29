@@ -63,16 +63,15 @@
       transform: translateY(-2px);
     }
 
-    .luxury-card {
-      background: linear-gradient(180deg, rgba(16, 17, 24, 0.85) 0%, rgba(8, 9, 13, 0.95) 100%);
-      border: 1px solid rgba(217, 154, 56, 0.18);
-      backdrop-filter: blur(14px);
+    .card-item {
+      background: #090a10;
+      border: 1px solid rgba(217, 154, 56, 0.2);
       transition: all 0.35s ease;
     }
-    .luxury-card:hover {
-      border-color: rgba(217, 154, 56, 0.6);
-      transform: translateY(-4px);
-      box-shadow: 0 15px 35px -10px rgba(0,0,0,0.85);
+    .card-item:hover {
+      border-color: rgba(217, 154, 56, 0.65);
+      transform: translateY(-5px);
+      box-shadow: 0 16px 36px -10px rgba(0,0,0,0.9);
     }
 
     .hero-glow {
@@ -159,7 +158,7 @@
     </div>
   </section>
 
-  <!-- Categorias de Bens & Produtos -->
+  <!-- Categorias com Fotos Reais dos Bens -->
   <section id="categorias" class="max-w-6xl mx-auto px-6 py-14">
     <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
       <div>
@@ -171,103 +170,163 @@
       </p>
     </div>
 
-    <!-- 6 Categorias -->
-    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+    <!-- Grade 6 Categorias com Imagens Reais -->
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
       
       <!-- 1. Caminhões & Pesados -->
-      <div class="luxury-card p-6 rounded-xl flex flex-col justify-between">
-        <div>
-          <div class="w-11 h-11 rounded-lg bg-black/60 border border-amber-500/30 flex items-center justify-center text-amber-400 text-lg mb-4">
-            <i class="fa-solid fa-truck-moving"></i>
-          </div>
-          <h3 class="font-brand text-base font-bold text-white mb-2 tracking-wide">CAMINHÕES & PESADOS</h3>
-          <p class="text-slate-400 text-xs leading-relaxed font-light">
-            Cavalos mecânicos, carretas, bitrens, caminhões toco e truck para expansão logística autônoma ou frotista.
-          </p>
+      <div class="card-item rounded-2xl overflow-hidden flex flex-col justify-between group">
+        <div class="relative h-48 overflow-hidden bg-black">
+          <img src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=800&q=80" 
+               alt="Caminhões e Pesados" 
+               class="w-full h-full object-cover group-hover:scale-105 transition duration-500 opacity-90">
+          <div class="absolute inset-0 bg-gradient-to-t from-[#090a10] via-transparent to-black/30"></div>
+          <span class="absolute top-3 left-3 bg-black/80 border border-amber-500/40 text-amber-400 text-[10px] font-bold px-2.5 py-1 rounded uppercase tracking-wider">
+            <i class="fa-solid fa-truck-moving mr-1"></i> Linha Pesada
+          </span>
         </div>
-        <a href="https://wa.me/5562981956336?text=Olá!%20Gostaria%20de%20mais%20informações%20sobre%20a%20linha%20de%20Caminhões." target="_blank" class="mt-5 text-[11px] font-bold uppercase tracking-wider text-amber-400 hover:text-amber-300 flex items-center gap-1.5">
-          Mais Informações <i class="fa-solid fa-chevron-right text-[9px]"></i>
-        </a>
+        <div class="p-6 flex flex-col justify-between flex-1">
+          <div>
+            <h3 class="font-brand text-base font-bold text-white mb-2 tracking-wide">CAMINHÕES & PESADOS</h3>
+            <p class="text-slate-400 text-xs leading-relaxed font-light mb-4">
+              Cavalos mecânicos, carretas, bitrens, caminhões toco e truck para expansão logística autônoma ou frotista.
+            </p>
+          </div>
+          <a href="https://wa.me/5562981956336?text=Olá!%20Gostaria%20de%20mais%20informações%20sobre%20a%20linha%20de%20Caminhões." 
+             target="_blank" 
+             class="text-[11px] font-bold uppercase tracking-wider text-amber-400 hover:text-amber-300 flex items-center gap-1.5 pt-3 border-t border-white/5">
+            Mais Informações <i class="fa-solid fa-chevron-right text-[9px]"></i>
+          </a>
+        </div>
       </div>
 
       <!-- 2. Maquinários & Agrícola -->
-      <div class="luxury-card p-6 rounded-xl flex flex-col justify-between">
-        <div>
-          <div class="w-11 h-11 rounded-lg bg-black/60 border border-amber-500/30 flex items-center justify-center text-amber-400 text-lg mb-4">
-            <i class="fa-solid fa-tractor"></i>
-          </div>
-          <h3 class="font-brand text-base font-bold text-white mb-2 tracking-wide">MAQUINÁRIOS & AGRÍCOLA</h3>
-          <p class="text-slate-400 text-xs leading-relaxed font-light">
-            Tratores, colheitadeiras, retroescavadeiras, pás carregadeiras e equipamentos industriais e rurais.
-          </p>
+      <div class="card-item rounded-2xl overflow-hidden flex flex-col justify-between group">
+        <div class="relative h-48 overflow-hidden bg-black">
+          <img src="https://images.unsplash.com/photo-1592982537447-7440770cbfc9?auto=format&fit=crop&w=800&q=80" 
+               alt="Maquinários e Agrícola" 
+               class="w-full h-full object-cover group-hover:scale-105 transition duration-500 opacity-90">
+          <div class="absolute inset-0 bg-gradient-to-t from-[#090a10] via-transparent to-black/30"></div>
+          <span class="absolute top-3 left-3 bg-black/80 border border-amber-500/40 text-amber-400 text-[10px] font-bold px-2.5 py-1 rounded uppercase tracking-wider">
+            <i class="fa-solid fa-tractor mr-1"></i> Agrícola & Obra
+          </span>
         </div>
-        <a href="https://wa.me/5562981956336?text=Olá!%20Gostaria%20de%20mais%20informações%20sobre%20a%20linha%20de%20Maquinários." target="_blank" class="mt-5 text-[11px] font-bold uppercase tracking-wider text-amber-400 hover:text-amber-300 flex items-center gap-1.5">
-          Mais Informações <i class="fa-solid fa-chevron-right text-[9px]"></i>
-        </a>
+        <div class="p-6 flex flex-col justify-between flex-1">
+          <div>
+            <h3 class="font-brand text-base font-bold text-white mb-2 tracking-wide">MAQUINÁRIOS & AGRÍCOLA</h3>
+            <p class="text-slate-400 text-xs leading-relaxed font-light mb-4">
+              Tratores, colheitadeiras, retroescavadeiras, pás carregadeiras e equipamentos industriais e rurais.
+            </p>
+          </div>
+          <a href="https://wa.me/5562981956336?text=Olá!%20Gostaria%20de%20mais%20informações%20sobre%20a%20linha%20de%20Maquinários." 
+             target="_blank" 
+             class="text-[11px] font-bold uppercase tracking-wider text-amber-400 hover:text-amber-300 flex items-center gap-1.5 pt-3 border-t border-white/5">
+            Mais Informações <i class="fa-solid fa-chevron-right text-[9px]"></i>
+          </a>
+        </div>
       </div>
 
       <!-- 3. Casas & Apartamentos -->
-      <div class="luxury-card p-6 rounded-xl flex flex-col justify-between">
-        <div>
-          <div class="w-11 h-11 rounded-lg bg-black/60 border border-amber-500/30 flex items-center justify-center text-amber-400 text-lg mb-4">
-            <i class="fa-solid fa-house-chimney"></i>
-          </div>
-          <h3 class="font-brand text-base font-bold text-white mb-2 tracking-wide">CASAS & APARTAMENTOS</h3>
-          <p class="text-slate-400 text-xs leading-relaxed font-light">
-            Compra de imóveis residenciais prontos ou na planta, salas comerciais, crédito para construção e reformas.
-          </p>
+      <div class="card-item rounded-2xl overflow-hidden flex flex-col justify-between group">
+        <div class="relative h-48 overflow-hidden bg-black">
+          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" 
+               alt="Casas e Apartamentos" 
+               class="w-full h-full object-cover group-hover:scale-105 transition duration-500 opacity-90">
+          <div class="absolute inset-0 bg-gradient-to-t from-[#090a10] via-transparent to-black/30"></div>
+          <span class="absolute top-3 left-3 bg-black/80 border border-amber-500/40 text-amber-400 text-[10px] font-bold px-2.5 py-1 rounded uppercase tracking-wider">
+            <i class="fa-solid fa-house-chimney mr-1"></i> Residencial
+          </span>
         </div>
-        <a href="https://wa.me/5562981956336?text=Olá!%20Gostaria%20de%20mais%20informações%20sobre%20Casas%20e%20Apartamentos." target="_blank" class="mt-5 text-[11px] font-bold uppercase tracking-wider text-amber-400 hover:text-amber-300 flex items-center gap-1.5">
-          Mais Informações <i class="fa-solid fa-chevron-right text-[9px]"></i>
-        </a>
+        <div class="p-6 flex flex-col justify-between flex-1">
+          <div>
+            <h3 class="font-brand text-base font-bold text-white mb-2 tracking-wide">CASAS & APARTAMENTOS</h3>
+            <p class="text-slate-400 text-xs leading-relaxed font-light mb-4">
+              Compra de imóveis residenciais prontos ou na planta, salas comerciais, crédito para construção e reformas.
+            </p>
+          </div>
+          <a href="https://wa.me/5562981956336?text=Olá!%20Gostaria%20de%20mais%20informações%20sobre%20Casas%20e%20Apartamentos." 
+             target="_blank" 
+             class="text-[11px] font-bold uppercase tracking-wider text-amber-400 hover:text-amber-300 flex items-center gap-1.5 pt-3 border-t border-white/5">
+            Mais Informações <i class="fa-solid fa-chevron-right text-[9px]"></i>
+          </a>
+        </div>
       </div>
 
       <!-- 4. Terrenos & Lotes -->
-      <div class="luxury-card p-6 rounded-xl flex flex-col justify-between">
-        <div>
-          <div class="w-11 h-11 rounded-lg bg-black/60 border border-amber-500/30 flex items-center justify-center text-amber-400 text-lg mb-4">
-            <i class="fa-solid fa-map-location-dot"></i>
-          </div>
-          <h3 class="font-brand text-base font-bold text-white mb-2 tracking-wide">TERRENOS & LOTES</h3>
-          <p class="text-slate-400 text-xs leading-relaxed font-light">
-            Lotes em condomínio fechado, terrenos urbanos comerciais e chácaras com prazos flexíveis e sem parcelas abusivas.
-          </p>
+      <div class="card-item rounded-2xl overflow-hidden flex flex-col justify-between group">
+        <div class="relative h-48 overflow-hidden bg-black">
+          <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=800&q=80" 
+               alt="Terrenos e Lotes" 
+               class="w-full h-full object-cover group-hover:scale-105 transition duration-500 opacity-90">
+          <div class="absolute inset-0 bg-gradient-to-t from-[#090a10] via-transparent to-black/30"></div>
+          <span class="absolute top-3 left-3 bg-black/80 border border-amber-500/40 text-amber-400 text-[10px] font-bold px-2.5 py-1 rounded uppercase tracking-wider">
+            <i class="fa-solid fa-map-location-dot mr-1"></i> Loteamentos
+          </span>
         </div>
-        <a href="https://wa.me/5562981956336?text=Olá!%20Gostaria%20de%20mais%20informações%20sobre%20Terrenos%20e%20Lotes." target="_blank" class="mt-5 text-[11px] font-bold uppercase tracking-wider text-amber-400 hover:text-amber-300 flex items-center gap-1.5">
-          Mais Informações <i class="fa-solid fa-chevron-right text-[9px]"></i>
-        </a>
+        <div class="p-6 flex flex-col justify-between flex-1">
+          <div>
+            <h3 class="font-brand text-base font-bold text-white mb-2 tracking-wide">TERRENOS & LOTES</h3>
+            <p class="text-slate-400 text-xs leading-relaxed font-light mb-4">
+              Lotes em condomínio fechado, terrenos urbanos comerciais e chácaras com prazos flexíveis e sem parcelas abusivas.
+            </p>
+          </div>
+          <a href="https://wa.me/5562981956336?text=Olá!%20Gostaria%20de%20mais%20informações%20sobre%20Terrenos%20e%20Lotes." 
+             target="_blank" 
+             class="text-[11px] font-bold uppercase tracking-wider text-amber-400 hover:text-amber-300 flex items-center gap-1.5 pt-3 border-t border-white/5">
+            Mais Informações <i class="fa-solid fa-chevron-right text-[9px]"></i>
+          </a>
+        </div>
       </div>
 
       <!-- 5. Utilitários & Frotas -->
-      <div class="luxury-card p-6 rounded-xl flex flex-col justify-between">
-        <div>
-          <div class="w-11 h-11 rounded-lg bg-black/60 border border-amber-500/30 flex items-center justify-center text-amber-400 text-lg mb-4">
-            <i class="fa-solid fa-van-shuttle"></i>
-          </div>
-          <h3 class="font-brand text-base font-bold text-white mb-2 tracking-wide">UTILITÁRIOS & FROTAS</h3>
-          <p class="text-slate-400 text-xs leading-relaxed font-light">
-            Vans, furgões, picapes e caminhonetes para serviços comerciais e renovação de frotas com economia real.
-          </p>
+      <div class="card-item rounded-2xl overflow-hidden flex flex-col justify-between group">
+        <div class="relative h-48 overflow-hidden bg-black">
+          <img src="https://images.unsplash.com/photo-1559416523-140ddc3d238c?auto=format&fit=crop&w=800&q=80" 
+               alt="Utilitários e Frotas" 
+               class="w-full h-full object-cover group-hover:scale-105 transition duration-500 opacity-90">
+          <div class="absolute inset-0 bg-gradient-to-t from-[#090a10] via-transparent to-black/30"></div>
+          <span class="absolute top-3 left-3 bg-black/80 border border-amber-500/40 text-amber-400 text-[10px] font-bold px-2.5 py-1 rounded uppercase tracking-wider">
+            <i class="fa-solid fa-van-shuttle mr-1"></i> Comercial
+          </span>
         </div>
-        <a href="https://wa.me/5562981956336?text=Olá!%20Gostaria%20de%20mais%20informações%20sobre%20Utilitários%20e%20Frotas." target="_blank" class="mt-5 text-[11px] font-bold uppercase tracking-wider text-amber-400 hover:text-amber-300 flex items-center gap-1.5">
-          Mais Informações <i class="fa-solid fa-chevron-right text-[9px]"></i>
-        </a>
+        <div class="p-6 flex flex-col justify-between flex-1">
+          <div>
+            <h3 class="font-brand text-base font-bold text-white mb-2 tracking-wide">UTILITÁRIOS & FROTAS</h3>
+            <p class="text-slate-400 text-xs leading-relaxed font-light mb-4">
+              Vans, furgões, picapes e caminhonetes para serviços comerciais e renovação de frotas com economia real.
+            </p>
+          </div>
+          <a href="https://wa.me/5562981956336?text=Olá!%20Gostaria%20de%20mais%20informações%20sobre%20Utilitários%20e%20Frotas." 
+             target="_blank" 
+             class="text-[11px] font-bold uppercase tracking-wider text-amber-400 hover:text-amber-300 flex items-center gap-1.5 pt-3 border-t border-white/5">
+            Mais Informações <i class="fa-solid fa-chevron-right text-[9px]"></i>
+          </a>
+        </div>
       </div>
 
       <!-- 6. Carros & Seminovos -->
-      <div class="luxury-card p-6 rounded-xl flex flex-col justify-between">
-        <div>
-          <div class="w-11 h-11 rounded-lg bg-black/60 border border-amber-500/30 flex items-center justify-center text-amber-400 text-lg mb-4">
-            <i class="fa-solid fa-car-side"></i>
-          </div>
-          <h3 class="font-brand text-base font-bold text-white mb-2 tracking-wide">CARROS & SEMINOVOS</h3>
-          <p class="text-slate-400 text-xs leading-relaxed font-light">
-            Conquiste seu carro zero quilômetro ou seminovo de qualquer marca ou modelo com poder de compra à vista na liberação.
-          </p>
+      <div class="card-item rounded-2xl overflow-hidden flex flex-col justify-between group">
+        <div class="relative h-48 overflow-hidden bg-black">
+          <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=800&q=80" 
+               alt="Carros e Seminovos" 
+               class="w-full h-full object-cover group-hover:scale-105 transition duration-500 opacity-90">
+          <div class="absolute inset-0 bg-gradient-to-t from-[#090a10] via-transparent to-black/30"></div>
+          <span class="absolute top-3 left-3 bg-black/80 border border-amber-500/40 text-amber-400 text-[10px] font-bold px-2.5 py-1 rounded uppercase tracking-wider">
+            <i class="fa-solid fa-car-side mr-1"></i> Passeio & Luxo
+          </span>
         </div>
-        <a href="https://wa.me/5562981956336?text=Olá!%20Gostaria%20de%20mais%20informações%20sobre%20Carros%20e%20Seminovos." target="_blank" class="mt-5 text-[11px] font-bold uppercase tracking-wider text-amber-400 hover:text-amber-300 flex items-center gap-1.5">
-          Mais Informações <i class="fa-solid fa-chevron-right text-[9px]"></i>
-        </a>
+        <div class="p-6 flex flex-col justify-between flex-1">
+          <div>
+            <h3 class="font-brand text-base font-bold text-white mb-2 tracking-wide">CARROS & SEMINOVOS</h3>
+            <p class="text-slate-400 text-xs leading-relaxed font-light mb-4">
+              Conquiste seu carro zero quilômetro ou seminovo de qualquer marca ou modelo com poder de compra à vista na liberação.
+            </p>
+          </div>
+          <a href="https://wa.me/5562981956336?text=Olá!%20Gostaria%20de%20mais%20informações%20sobre%20Carros%20e%20Seminovos." 
+             target="_blank" 
+             class="text-[11px] font-bold uppercase tracking-wider text-amber-400 hover:text-amber-300 flex items-center gap-1.5 pt-3 border-t border-white/5">
+            Mais Informações <i class="fa-solid fa-chevron-right text-[9px]"></i>
+          </a>
+        </div>
       </div>
 
     </div>
@@ -310,7 +369,7 @@
 
   <!-- Contato / CTA Final -->
   <section id="contato" class="max-w-4xl mx-auto px-6 py-16 text-center">
-    <div class="luxury-card p-8 md:p-12 rounded-2xl relative overflow-hidden">
+    <div class="card-item p-8 md:p-12 rounded-2xl relative overflow-hidden">
       <h2 class="font-brand text-2xl md:text-3xl font-black text-white tracking-wide mb-3">
         QUER SABER MAIS DETALHES?
       </h2>
@@ -318,7 +377,6 @@
         Nossos consultores estão prontos para tirar dúvidas e apresentar as melhores oportunidades para o seu plano.
       </p>
 
-      <!-- Botão Único Direto -->
       <a href="https://wa.me/5562981956336?text=Olá!%20Gostaria%20de%20obter%20mais%20informações%20com%20a%20Brooklyn%20Representações." 
          target="_blank" 
          class="gold-btn inline-flex items-center gap-3 px-8 py-3.5 rounded-lg text-xs uppercase">
@@ -331,14 +389,12 @@
   <footer class="border-t border-white/5 py-10 bg-[#020204] text-center text-slate-500">
     <div class="max-w-6xl mx-auto px-6 flex flex-col items-center gap-6">
       
-      <!-- Marca Limpa no Rodapé -->
       <div class="flex items-center justify-center gap-2">
         <span class="font-brand font-bold gold-gradient-text text-sm tracking-wider">BROOKLYN</span>
         <span class="text-slate-600">|</span>
         <span class="uppercase tracking-widest text-[9px] text-slate-400">Representações Comerciais</span>
       </div>
 
-      <!-- Texto Legal de Autorização no Banco Central -->
       <div class="max-w-2xl text-[10px] leading-relaxed text-slate-500 font-light">
         <p class="flex items-center justify-center gap-1.5 text-slate-400 font-medium mb-1">
           <i class="fa-solid fa-building-columns text-amber-400/80 text-[10px]"></i>
@@ -349,7 +405,6 @@
         </p>
       </div>
 
-      <!-- Copyright -->
       <p class="text-[9.5px] text-slate-600">
         © 2026 Brooklyn Representações Comerciais. Todos os direitos reservados.
       </p>
