@@ -10,7 +10,7 @@
   <!-- Fontes de Prestígio -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
   <script>
@@ -31,6 +31,7 @@
   </script>
 
   <style>
+    /* Degradê Ouro Metálico Fiel às Cores da Marca */
     .gold-gradient-text {
       background: linear-gradient(135deg, #ffffff 0%, #fae29c 25%, #d99a38 60%, #9e5b19 100%);
       -webkit-background-clip: text;
@@ -77,7 +78,7 @@
 
     .hero-glow {
       background: 
-        radial-gradient(circle at 50% 20%, rgba(217, 154, 56, 0.16) 0%, transparent 60%),
+        radial-gradient(circle at 50% 15%, rgba(217, 154, 56, 0.14) 0%, transparent 60%),
         radial-gradient(circle at 80% 80%, rgba(138, 146, 154, 0.08) 0%, transparent 45%),
         #040406;
     }
@@ -93,45 +94,17 @@
   </a>
 
   <!-- Navbar -->
-  <header class="fixed top-0 left-0 right-0 z-40 px-4 py-3">
-    <div class="max-w-6xl mx-auto rounded-xl bg-[#08090d]/90 backdrop-blur-md border border-white/10 px-6 py-2.5 flex items-center justify-between shadow-2xl">
+  <header class="fixed top-0 left-0 right-0 z-40 px-4 py-4">
+    <div class="max-w-6xl mx-auto rounded-xl bg-[#08090d]/90 backdrop-blur-md border border-white/10 px-6 py-3 flex items-center justify-between shadow-2xl">
       
-      <!-- Logo Superior Oficial -->
-      <a href="#" class="flex items-center gap-3 group">
-        <div class="w-10 h-10 rounded-lg border border-amber-500/40 bg-black flex items-center justify-center p-0.5 shadow-md overflow-hidden">
-          <svg viewBox="0 0 100 100" class="w-full h-full">
-            <defs>
-              <linearGradient id="navG" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stop-color="#fff" />
-                <stop offset="40%" stop-color="#fae29c" />
-                <stop offset="70%" stop-color="#d99a38" />
-                <stop offset="100%" stop-color="#8c4e13" />
-              </linearGradient>
-              <linearGradient id="navS" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stop-color="#f8fafc" />
-                <stop offset="50%" stop-color="#94a3b8" />
-                <stop offset="100%" stop-color="#334155" />
-              </linearGradient>
-            </defs>
-            <!-- Haste Dourada -->
-            <rect x="18" y="15" width="22" height="70" rx="3" fill="url(#navG)" />
-            <!-- Bojos Prateados -->
-            <path d="M38 15h22c12 0 22 7 22 18s-10 17-22 17H38z" fill="url(#navS)" stroke="url(#navG)" stroke-width="1.5" />
-            <path d="M44 24h15c6 0 11 3 11 9s-5 9-11 9H44z" fill="#050508" />
-            <path d="M38 48h25c14 0 25 8 25 20s-11 17-25 17H38z" fill="url(#navS)" stroke="url(#navG)" stroke-width="1.5" />
-            <path d="M44 57h16c8 0 13 3 13 9s-5 9-13 9H44z" fill="#050508" />
-            <!-- Prédios Dourados com Pirâmide -->
-            <polygon points="46,85 54,42 62,85" fill="url(#navG)" />
-            <rect x="52" y="32" width="4" height="53" fill="url(#navG)" />
-            <line x1="54" y1="32" x2="54" y2="20" stroke="url(#navG)" stroke-width="2" />
-            <!-- Arco Dourado -->
-            <path d="M10 68C22 42 55 52 90 28" stroke="url(#navG)" stroke-width="4.5" stroke-linecap="round" fill="none" />
-          </svg>
-        </div>
-        <div class="flex flex-col">
-          <span class="font-brand text-xl font-black tracking-[0.16em] gold-gradient-text leading-none">BROOKLYN</span>
-          <span class="text-[7.5px] font-semibold tracking-[0.3em] text-slate-400 uppercase mt-0.5">Representações Comerciais</span>
-        </div>
+      <!-- Marca Tipográfica Exclusiva Brooklyn -->
+      <a href="#" class="flex flex-col">
+        <span class="font-brand text-2xl font-black tracking-[0.2em] gold-gradient-text leading-none">
+          BROOKLYN
+        </span>
+        <span class="text-[8px] font-semibold tracking-[0.35em] text-slate-400 uppercase mt-1">
+          REPRESENTAÇÕES COMERCIAIS
+        </span>
       </a>
 
       <nav class="hidden md:flex gap-8 text-xs font-semibold uppercase tracking-wider text-slate-400">
@@ -142,88 +115,40 @@
 
       <a href="https://wa.me/5562999999999?text=Olá,%20gostaria%20de%20um%20atendimento%20Brooklyn!" 
          target="_blank" 
-         class="gold-btn text-xs uppercase px-4 py-2 rounded-lg flex items-center gap-2">
+         class="gold-btn text-xs uppercase px-5 py-2.5 rounded-lg flex items-center gap-2">
         <i class="fa-brands fa-whatsapp text-sm"></i> Falar Agora
       </a>
     </div>
   </header>
 
-  <!-- Hero Section -->
-  <section class="hero-glow relative min-h-[92vh] flex items-center justify-center pt-28 pb-16 overflow-hidden">
+  <!-- Hero Section Limpa e Imponente -->
+  <section class="hero-glow relative min-h-[92vh] flex items-center justify-center pt-32 pb-20 overflow-hidden">
     
     <div class="max-w-4xl mx-auto px-6 text-center relative z-10 flex flex-col items-center">
       
-      <!-- Brasão Monumental com o B, Arranha-céus e Pirâmide -->
-      <div class="relative mb-6 group cursor-pointer">
-        <div class="absolute -inset-3 rounded-3xl bg-gradient-to-r from-amber-600/40 via-amber-300/30 to-amber-700/40 blur-2xl opacity-50 group-hover:opacity-90 transition duration-500"></div>
-        
-        <div class="relative w-44 h-44 md:w-56 md:h-56 rounded-2xl p-2 bg-[#060609] border border-amber-500/40 shadow-2xl transition duration-500 group-hover:scale-105 flex items-center justify-center">
-          <svg viewBox="0 0 100 100" class="w-full h-full drop-shadow-[0_10px_25px_rgba(217,154,56,0.4)]">
-            <defs>
-              <linearGradient id="mainGold" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stop-color="#ffffff" />
-                <stop offset="25%" stop-color="#fae29c" />
-                <stop offset="65%" stop-color="#d99a38" />
-                <stop offset="100%" stop-color="#8c4e13" />
-              </linearGradient>
-              <linearGradient id="mainSteel" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stop-color="#ffffff" />
-                <stop offset="35%" stop-color="#cbd5e1" />
-                <stop offset="70%" stop-color="#64748b" />
-                <stop offset="100%" stop-color="#1e293b" />
-              </linearGradient>
-            </defs>
-
-            <!-- Haste Esquerda do B em Ouro Polido -->
-            <rect x="18" y="14" width="22" height="72" rx="3" fill="url(#mainGold)" />
-
-            <!-- Bojo Superior do B em Titânio com Contorno Ouro -->
-            <path d="M38 14h24c13 0 23 8 23 19s-10 18-23 18H38z" fill="url(#mainSteel)" stroke="url(#mainGold)" stroke-width="1.8" />
-            <path d="M44 23h16c7 0 12 3 12 9s-5 9-12 9H44z" fill="#060609" />
-
-            <!-- Bojo Inferior do B em Titânio com Contorno Ouro -->
-            <path d="M38 48h28c15 0 27 8 27 21s-12 17-27 17H38z" fill="url(#mainSteel)" stroke="url(#mainGold)" stroke-width="2" />
-            <path d="M44 57h18c9 0 15 3 15 10s-6 9-15 9H44z" fill="#060609" />
-
-            <!-- Arranha-céus / Edifícios no Interior -->
-            <!-- Edifício Esquerda -->
-            <rect x="42" y="52" width="6" height="34" fill="url(#mainGold)" opacity="0.85" />
-            <line x1="45" y1="54" x2="45" y2="84" stroke="#060609" stroke-width="0.8" />
-
-            <!-- Edifício Central com Antena -->
-            <rect x="51" y="32" width="7" height="54" fill="url(#mainGold)" />
-            <line x1="54.5" y1="32" x2="54.5" y2="18" stroke="url(#mainGold)" stroke-width="2" stroke-linecap="round" />
-            <line x1="53.5" y1="34" x2="53.5" y2="84" stroke="#060609" stroke-width="0.8" />
-            <line x1="55.5" y1="34" x2="55.5" y2="84" stroke="#060609" stroke-width="0.8" />
-
-            <!-- Edifício Direita -->
-            <rect x="61" y="56" width="6" height="30" fill="url(#mainGold)" opacity="0.85" />
-            <line x1="64" y1="58" x2="64" y2="84" stroke="#060609" stroke-width="0.8" />
-
-            <!-- Fachada em Pirâmide Central com Janelas Horizontais -->
-            <polygon points="45,86 54.5,44 64,86" fill="url(#mainGold)" stroke="#ffffff" stroke-width="0.5" />
-            <line x1="54.5" y1="44" x2="54.5" y2="86" stroke="#060609" stroke-width="1" />
-            <line x1="49" y1="74" x2="60" y2="74" stroke="#060609" stroke-width="0.8" />
-            <line x1="51" y1="65" x2="58" y2="65" stroke="#060609" stroke-width="0.8" />
-            <line x1="52.5" y1="55" x2="56.5" y2="55" stroke="#060609" stroke-width="0.8" />
-
-            <!-- Grande Arco Dourado Transversal em Corte Ascendente -->
-            <path d="M 8 72 C 22 40 60 52 94 24 C 80 50 42 70 8 72 Z" fill="url(#mainGold)" filter="drop-shadow(0 4px 6px rgba(0,0,0,0.9))" />
-          </svg>
-        </div>
+      <!-- Selo de Sofisticação Superior -->
+      <div class="inline-flex items-center gap-3 px-5 py-2 rounded-full border border-amber-500/30 bg-black/60 mb-8 backdrop-blur-md">
+        <span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span>
+        <span class="text-[10px] font-bold uppercase tracking-[0.3em] gold-gradient-text">
+          BROOKLYN REPRESENTAÇÕES
+        </span>
+        <span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span>
       </div>
 
+      <!-- Título Principal com Tipografia Monumental -->
       <h1 class="font-brand text-4xl sm:text-6xl md:text-7xl font-black tracking-tight leading-[1.08] text-white">
         O SEU PATRIMÔNIO NO <br/>
         <span class="gold-gradient-text">MAIS ALTO NÍVEL</span>.
       </h1>
 
-      <p class="mt-6 text-slate-400 text-sm md:text-base max-w-xl leading-relaxed">
+      <div class="w-24 h-0.5 bg-gradient-to-r from-transparent via-amber-400 to-transparent my-6"></div>
+
+      <p class="text-slate-400 text-sm md:text-base max-w-xl leading-relaxed font-light">
         Soluções estratégicas para compra de veículos, imóveis e novos projetos com total transparência, liquidez e excelência.
       </p>
 
-      <!-- Botões Hero -->
-      <div class="mt-8 flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
+      <!-- Botões de Ação -->
+      <div class="mt-10 flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
         <a href="https://wa.me/5562999999999?text=Olá,%20quero%20solicitar%20uma%20simulação!" 
            target="_blank" 
            class="gold-btn px-8 py-3.5 rounded-lg text-xs uppercase flex items-center justify-center gap-2">
@@ -261,7 +186,7 @@
           </div>
           <h3 class="font-brand text-lg font-bold text-white mb-2">VEÍCULOS & FROTAS</h3>
           <p class="text-slate-400 text-xs leading-relaxed font-light">
-            Condições personalizadas para novos, seminovos, frotas corporativas e utilitários sem cobrança abusiva de juros bancários.
+            Condições personalizadas para aquisição de novos, seminovos, frotas corporativas e utilitários sem cobrança abusiva de juros bancários.
           </p>
         </div>
         <a href="https://wa.me/5562999999999?text=Olá,%20tenho%20interesse%20na%20Linha%20Veículos!" target="_blank" class="mt-6 text-[11px] font-bold uppercase tracking-wider text-amber-400 hover:text-amber-300 flex items-center gap-1.5">
@@ -346,7 +271,7 @@
         VAMOS COMEÇAR O SEU PROJETO?
       </h2>
       <p class="text-slate-400 text-xs md:text-sm max-w-md mx-auto mb-8 font-light">
-        Fale conosco agora mesmo para receber as simulações mais vantajosas para o seu plano patrimonial.
+        Fale connosco agora mesmo para receber as simulações mais vantajosas para o seu plano patrimonial.
       </p>
 
       <a href="https://wa.me/5562999999999?text=Olá,%20gostaria%20de%20iniciar%20uma%20simulação%20com%20a%20Brooklyn!" 
