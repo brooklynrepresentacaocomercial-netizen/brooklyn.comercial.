@@ -3,9 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Brooklyn Representações Comerciais - Especialistas em consórcio, financiamento e carta de crédito para aquisição de imóveis, veículos, máquinas e expansão patrimonial.">
-  <title>Brooklyn | Representações Comerciais</title>
   
+  <!-- SEO Estratégico Local: Goiânia e Região -->
+  <title>Brooklyn Representações Comerciais | Consórcio e Planejamento em Goiânia</title>
+  <meta name="description" content="Brooklyn Representações Comerciais em Goiânia - GO. Atendimento presencial e especializado em consórcio, financiamento e cartas de crédito para imóveis, automóveis, caminhões, maquinários e capital de giro.">
+  <meta name="keywords" content="consórcio em Goiânia, planejamento de crédito em Goiânia, representação comercial em Goiânia, carta de crédito Goiânia, financiamento de veículos, consórcio imobiliário Goiás">
+  <meta name="author" content="BROOKLYN REPRESENTAÇÕES COMERCIAIS">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph / Redes Sociais -->
+  <meta property="og:title" content="Brooklyn Representações Comerciais | Planejamento Patrimonial">
+  <meta property="og:description" content="Aproximando pessoas de soluções planejadas em Goiânia e região. Imóveis, automóveis, caminhões e frotas com transparência integral.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://brooklynrepresentacaocomercial-netizen.github.io/brooklyn.comercial./">
+
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
   
@@ -25,9 +36,10 @@
           },
           colors: {
             bkDark: '#040406',
-            bkSurface: '#0a0a0f',
-            bkCard: '#101118',
-            bkBorder: 'rgba(217, 154, 56, 0.22)',
+            bkSurface: '#090a0f',
+            bkCard: '#0f1017',
+            bkGold: '#d99a38',
+            bkGoldLight: '#fae29c',
           }
         }
       }
@@ -35,8 +47,9 @@
   </script>
 
   <style>
+    /* Degradê Metálico Sofisticado */
     .gold-gradient-text {
-      background: linear-gradient(135deg, #ffffff 0%, #fae29c 25%, #d99a38 60%, #9e5b19 100%);
+      background: linear-gradient(135deg, #ffffff 0%, #fae29c 30%, #d99a38 65%, #9e5b19 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
@@ -81,27 +94,28 @@
 
     .hero-glow {
       background: 
-        radial-gradient(circle at 50% 15%, rgba(217, 154, 56, 0.12) 0%, transparent 60%),
-        radial-gradient(circle at 85% 85%, rgba(138, 146, 154, 0.06) 0%, transparent 50%),
+        radial-gradient(circle at 50% 12%, rgba(217, 154, 56, 0.14) 0%, transparent 60%),
+        radial-gradient(circle at 85% 85%, rgba(138, 146, 154, 0.05) 0%, transparent 50%),
         #040406;
     }
   </style>
 </head>
 <body class="bg-bkDark text-slate-200 font-sans antialiased selection:bg-[#d99a38] selection:text-black">
 
-  <!-- WhatsApp Flutuante Fixo -->
-  <a href="https://wa.me/5562981956336?text=Ol%C3%A1!%20Gostaria%20de%20falar%20com%20um%20especialista%20da%20Brooklyn%20Representa%C3%A7%C3%B5es." 
+  <!-- WhatsApp Flutuante Fixo (Acesso Imediato) -->
+  <a href="https://wa.me/5562981956336?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20atendimento%20com%20um%20especialista%20da%20Brooklyn%20Representa%C3%A7%C3%B5es." 
      target="_blank" 
      rel="noopener noreferrer"
-     aria-label="Atendimento WhatsApp Brooklyn"
+     aria-label="Atendimento Comercial WhatsApp Brooklyn"
      class="fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full bg-emerald-500 hover:bg-emerald-400 text-white flex items-center justify-center text-2xl shadow-2xl transition hover:scale-110">
     <i class="fa-brands fa-whatsapp"></i>
   </a>
 
-  <!-- Header / Barra de Navegação -->
-  <header class="fixed top-0 left-0 right-0 z-40 px-4 py-3 bg-[#060609]/90 backdrop-blur-md border-b border-white/10">
+  <!-- Header Institucional -->
+  <header class="fixed top-0 left-0 right-0 z-40 px-4 py-3 bg-[#060609]/92 backdrop-blur-md border-b border-white/10">
     <div class="max-w-7xl mx-auto flex items-center justify-between">
       
+      <!-- Logotipo / Assinatura da Marca -->
       <a href="#" class="flex flex-col">
         <span class="font-brand text-xl md:text-2xl font-black tracking-[0.2em] gold-gradient-text leading-none">
           BROOKLYN
@@ -111,20 +125,21 @@
         </span>
       </a>
 
+      <!-- Menu Principal -->
       <nav class="hidden lg:flex gap-7 text-xs font-semibold uppercase tracking-wider text-slate-400">
         <a href="#solucoes" class="hover:text-amber-300 transition">Soluções</a>
-        <a href="#diferenciais" class="hover:text-amber-300 transition">Diferenciais</a>
         <a href="#como-funciona" class="hover:text-amber-300 transition">Como Funciona</a>
-        <a href="#quem-somos" class="hover:text-amber-300 transition">Quem Somos</a>
-        <a href="#depoimentos" class="hover:text-amber-300 transition">Depoimentos</a>
-        <a href="#contato" class="hover:text-amber-300 transition">Contato</a>
+        <a href="#sobre" class="hover:text-amber-300 transition">Sobre a Empresa</a>
+        <a href="#diferenciais" class="hover:text-amber-300 transition">Diferenciais</a>
+        <a href="#contato" class="hover:text-amber-300 transition">Atendimento em Goiânia</a>
       </nav>
 
-      <a href="https://wa.me/5562981956336?text=Ol%C3%A1!%20Gostaria%20de%20falar%20com%20um%20especialista%20da%20Brooklyn%20Representa%C3%A7%C3%B5es." 
+      <!-- CTA de Cabeçalho -->
+      <a href="https://wa.me/5562981956336?text=Ol%C3%A1!%20Quero%20falar%20com%20um%20especialista%20da%20Brooklyn%20Representa%C3%A7%C3%B5es." 
          target="_blank" 
          rel="noopener noreferrer"
          class="gold-btn text-xs uppercase px-4 py-2.5 rounded-lg flex items-center gap-2">
-        <i class="fa-brands fa-whatsapp text-sm"></i> Falar com Especialista
+        <i class="fa-brands fa-whatsapp text-sm"></i> Quero falar com um especialista
       </a>
     </div>
   </header>
@@ -136,11 +151,12 @@
       <div class="inline-flex items-center gap-3 px-4 py-1.5 rounded-full border border-amber-500/30 bg-black/60 mb-6 backdrop-blur-md">
         <span class="w-1.5 h-1.5 rounded-full bg-amber-400 animate-pulse"></span>
         <span class="text-[9.5px] font-bold uppercase tracking-[0.3em] gold-gradient-text">
-          CONSÓRCIO • FINANCIAMENTO • CARTA DE CRÉDITO
+          PLANEJAMENTO PATRIMONIAL EM GOIÂNIA E REGIÃO
         </span>
         <span class="w-1.5 h-1.5 rounded-full bg-amber-400 animate-pulse"></span>
       </div>
 
+      <!-- Título de Alto Impacto -->
       <h1 class="font-brand text-3xl sm:text-5xl md:text-6xl font-black tracking-tight leading-[1.12] text-white">
         O SEU PATRIMÔNIO <br/>
         <span class="gold-gradient-text">MAIS PERTO DO QUE VOCÊ IMAGINA.</span>
@@ -148,46 +164,54 @@
 
       <div class="w-24 h-0.5 bg-gradient-to-r from-transparent via-amber-400 to-transparent my-6"></div>
 
+      <!-- Posicionamento Institucional Sóbrio -->
       <p class="text-slate-300 text-sm md:text-lg max-w-2xl leading-relaxed font-light">
-        Planejamento sob medida em consórcios, cartas de crédito e financiamentos para conquistar seus objetivos. Soluções estratégicas para aquisição de imóveis, veículos, máquinas e expansão patrimonial, com atendimento especializado e condições planejadas para você.
+        A Brooklyn Representações Comerciais atua na intermediação de consórcios, cartas de crédito e financiamentos planejados. Conectamos seu objetivo às melhores oportunidades do mercado com suporte consultivo e transparência em todas as etapas.
       </p>
 
+      <!-- Botões de Ação Comerciais -->
       <div class="mt-10 flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
         <a href="#solucoes" 
            class="outline-gold-btn px-8 py-4 rounded-lg text-slate-200 font-bold text-xs uppercase tracking-wider flex items-center justify-center">
-          Conhecer Nossas Soluções
+          Conhecer as soluções disponíveis
         </a>
-        <a href="https://wa.me/5562981956336?text=Ol%C3%A1!%20Gostaria%20de%20falar%20com%20um%20especialista%20da%20Brooklyn%20Representa%C3%A7%C3%B5es." 
+        <a href="https://wa.me/5562981956336?text=Ol%C3%A1!%20Quero%20conhecer%20as%20op%C3%A7%C3%B5es%20da%20Brooklyn%20Representa%C3%A7%C3%B5es." 
            target="_blank" 
            rel="noopener noreferrer"
            class="gold-btn px-8 py-4 rounded-lg text-xs uppercase flex items-center justify-center gap-2">
           <i class="fa-brands fa-whatsapp text-sm"></i>
-          <span>Falar com um Especialista</span>
+          <span>Quero conhecer as opções</span>
         </a>
+      </div>
+
+      <!-- Destaque Atendimento Presencial -->
+      <div class="mt-12 flex items-center justify-center gap-2 text-xs text-slate-400">
+        <i class="fa-solid fa-location-dot text-amber-400"></i>
+        <span>Atendimento consultivo e presencial em Goiânia – GO sob agendamento</span>
       </div>
 
     </div>
   </section>
 
-  <!-- 2. Categorias de Atendimento -->
+  <!-- 2. Serviços / Soluções Oferecidas (7 Categorias Estratégicas) -->
   <section id="solucoes" class="max-w-7xl mx-auto px-6 py-20 border-t border-white/5">
     <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
       <div>
-        <span class="text-xs font-bold uppercase tracking-[0.25em] text-amber-400 block mb-1">Portfólio Estratégico</span>
-        <h2 class="font-brand text-2xl md:text-3xl font-extrabold text-white">CATEGORIAS DE ATENDIMENTO</h2>
+        <span class="text-xs font-bold uppercase tracking-[0.25em] text-amber-400 block mb-1">Portfólio de Atendimento</span>
+        <h2 class="font-brand text-2xl md:text-3xl font-extrabold text-white">SOLUÇÕES PATRIMONIAIS</h2>
       </div>
       <p class="text-slate-400 text-xs md:text-sm max-w-md">
-        Selecione o segmento patrimonial desejado para consultar consórcios, financiamentos ou cartas de crédito com atendimento exclusivo.
+        Opções estruturadas para cada modalidade de bem. Selecione o segmento de seu interesse e consulte as condições vigentes.
       </p>
     </div>
 
-    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
       
-      <!-- 1. Carros e Seminovos -->
+      <!-- 1. Automóveis -->
       <div class="luxury-card rounded-2xl overflow-hidden flex flex-col justify-between group">
         <div class="relative h-44 overflow-hidden bg-black">
           <img src="https://images.unsplash.com/photo-1549399542-7e3f8b79c341?auto=format&fit=crop&w=800&q=80" 
-               alt="Carros e Seminovos" 
+               alt="Automóveis e Seminovos" 
                class="w-full h-full object-cover group-hover:scale-105 transition duration-500 opacity-85"
                onerror="this.style.display='none'">
           <div class="absolute inset-0 bg-gradient-to-t from-[#101118] via-transparent to-black/30 pointer-events-none"></div>
@@ -197,16 +221,16 @@
         </div>
         <div class="p-5 flex flex-col justify-between flex-1">
           <div>
-            <h3 class="font-brand text-base font-bold text-white mb-2 tracking-wide">CARROS E SEMINOVOS</h3>
+            <h3 class="font-brand text-base font-bold text-white mb-2 tracking-wide">AUTOMÓVEIS</h3>
             <p class="text-slate-400 text-xs leading-relaxed font-light mb-4">
-              Consórcio, financiamento e cartas de crédito para aquisição de veículos novos e seminovos com parcelas ajustadas ao seu bolso.
+              Planejamento para compra ou troca de veículos novos e seminovos nacionais ou importados com previsibilidade financeira.
             </p>
           </div>
-          <a href="https://wa.me/5562981956336?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20as%20condi%C3%A7%C3%B5es%20para%20Carros%20e%20Seminovos." 
+          <a href="https://wa.me/5562981956336?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20atendimento%20para%20a%20categoria%20Autom%C3%B3veis." 
              target="_blank" 
              rel="noopener noreferrer"
              class="text-[11px] font-bold uppercase tracking-wider text-amber-400 hover:text-amber-300 flex items-center gap-1.5 pt-3 border-t border-white/5">
-            Saiba Mais <i class="fa-solid fa-chevron-right text-[9px]"></i>
+            Solicitar atendimento <i class="fa-solid fa-chevron-right text-[9px]"></i>
           </a>
         </div>
       </div>
@@ -227,47 +251,47 @@
           <div>
             <h3 class="font-brand text-base font-bold text-white mb-2 tracking-wide">MOTOCICLETAS</h3>
             <p class="text-slate-400 text-xs leading-relaxed font-light mb-4">
-              Planos inteligentes para motos de trabalho ou alta cilindrada, com opções de consórcios e cartas de crédito sob medida.
+              Planos voltados para aquisição de motocicletas urbanas, de trabalho ou alta cilindrada sem cobranças de juros compostos.
             </p>
           </div>
-          <a href="https://wa.me/5562981956336?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20as%20condi%C3%A7%C3%B5es%20para%20Motocicletas." 
+          <a href="https://wa.me/5562981956336?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20atendimento%20para%20a%20categoria%20Motocicletas." 
              target="_blank" 
              rel="noopener noreferrer"
              class="text-[11px] font-bold uppercase tracking-wider text-amber-400 hover:text-amber-300 flex items-center gap-1.5 pt-3 border-t border-white/5">
-            Saiba Mais <i class="fa-solid fa-chevron-right text-[9px]"></i>
+            Solicitar atendimento <i class="fa-solid fa-chevron-right text-[9px]"></i>
           </a>
         </div>
       </div>
 
-      <!-- 3. Casas e Apartamentos -->
+      <!-- 3. Imóveis -->
       <div class="luxury-card rounded-2xl overflow-hidden flex flex-col justify-between group">
         <div class="relative h-44 overflow-hidden bg-black">
           <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=800&q=80" 
-               alt="Casas e Apartamentos" 
+               alt="Imóveis Residenciais e Comerciais" 
                class="w-full h-full object-cover group-hover:scale-105 transition duration-500 opacity-85"
                onerror="this.style.display='none'">
           <div class="absolute inset-0 bg-gradient-to-t from-[#101118] via-transparent to-black/30 pointer-events-none"></div>
           <span class="absolute top-3 left-3 bg-black/80 border border-amber-500/40 text-amber-400 text-[10px] font-bold px-2.5 py-1 rounded uppercase tracking-wider">
-            <i class="fa-solid fa-house-chimney mr-1"></i> Habitação
+            <i class="fa-solid fa-house-chimney mr-1"></i> Habitação & Comercial
           </span>
         </div>
         <div class="p-5 flex flex-col justify-between flex-1">
           <div>
-            <h3 class="font-brand text-base font-bold text-white mb-2 tracking-wide">CASAS E APARTAMENTOS</h3>
+            <h3 class="font-brand text-base font-bold text-white mb-2 tracking-wide">IMÓVEIS</h3>
             <p class="text-slate-400 text-xs leading-relaxed font-light mb-4">
-              Conquista do imóvel próprio ou comercial, recursos para construção e reformas via cartas contempladas, consórcio ou financiamento.
+              Soluções para aquisição de casas, apartamentos, salas comerciais, galpões industriais, reformas e construção própria.
             </p>
           </div>
-          <a href="https://wa.me/5562981956336?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20as%20condi%C3%A7%C3%B5es%20para%20Casas%20e%20Apartamentos." 
+          <a href="https://wa.me/5562981956336?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20atendimento%20para%20a%20categoria%20Im%C3%B3veis." 
              target="_blank" 
              rel="noopener noreferrer"
              class="text-[11px] font-bold uppercase tracking-wider text-amber-400 hover:text-amber-300 flex items-center gap-1.5 pt-3 border-t border-white/5">
-            Saiba Mais <i class="fa-solid fa-chevron-right text-[9px]"></i>
+            Solicitar atendimento <i class="fa-solid fa-chevron-right text-[9px]"></i>
           </a>
         </div>
       </div>
 
-      <!-- 4. Terrenos e Lotes -->
+      <!-- 4. Terrenos -->
       <div class="luxury-card rounded-2xl overflow-hidden flex flex-col justify-between group">
         <div class="relative h-44 overflow-hidden bg-black">
           <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=800&q=80" 
@@ -281,25 +305,25 @@
         </div>
         <div class="p-5 flex flex-col justify-between flex-1">
           <div>
-            <h3 class="font-brand text-base font-bold text-white mb-2 tracking-wide">TERRENOS E LOTES</h3>
+            <h3 class="font-brand text-base font-bold text-white mb-2 tracking-wide">TERRENOS</h3>
             <p class="text-slate-400 text-xs leading-relaxed font-light mb-4">
-              Viabilização de terrenos em condomínios fechados, chácaras e áreas urbanas com planos estruturados e parcelas equilibradas.
+              Acesso a lotes em condomínios fechados, chácaras de lazer e terrenos urbanos com parcelas que preservam o fluxo mensal.
             </p>
           </div>
-          <a href="https://wa.me/5562981956336?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20as%20condi%C3%A7%C3%B5es%20para%20Terrenos%20e%20Lotes." 
+          <a href="https://wa.me/5562981956336?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20atendimento%20para%20a%20categoria%20Terrenos." 
              target="_blank" 
              rel="noopener noreferrer"
              class="text-[11px] font-bold uppercase tracking-wider text-amber-400 hover:text-amber-300 flex items-center gap-1.5 pt-3 border-t border-white/5">
-            Saiba Mais <i class="fa-solid fa-chevron-right text-[9px]"></i>
+            Solicitar atendimento <i class="fa-solid fa-chevron-right text-[9px]"></i>
           </a>
         </div>
       </div>
 
-      <!-- 5. Caminhões e Veículos Pesados -->
+      <!-- 5. Caminhões -->
       <div class="luxury-card rounded-2xl overflow-hidden flex flex-col justify-between group">
         <div class="relative h-44 overflow-hidden bg-black">
           <img src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=800&q=80" 
-               alt="Caminhões e Veículos Pesados" 
+               alt="Caminhões e Pesados" 
                class="w-full h-full object-cover group-hover:scale-105 transition duration-500 opacity-85"
                onerror="this.style.display='none'">
           <div class="absolute inset-0 bg-gradient-to-t from-[#101118] via-transparent to-black/30 pointer-events-none"></div>
@@ -309,21 +333,21 @@
         </div>
         <div class="p-5 flex flex-col justify-between flex-1">
           <div>
-            <h3 class="font-brand text-base font-bold text-white mb-2 tracking-wide">CAMINHÕES E PESADOS</h3>
+            <h3 class="font-brand text-base font-bold text-white mb-2 tracking-wide">CAMINHÕES</h3>
             <p class="text-slate-400 text-xs leading-relaxed font-light mb-4">
-              Cavalos mecânicos, carretas e bitrens para frotistas e motoristas autônomos com as melhores condições do mercado.
+              Estruturação para cavalos mecânicos, carretas, bitrens e caminhões truck para renovação ou ampliação de frota de transporte.
             </p>
           </div>
-          <a href="https://wa.me/5562981956336?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20as%20condi%C3%A7%C3%B5es%20para%20Caminh%C3%B5es%20e%20Pesados." 
+          <a href="https://wa.me/5562981956336?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20atendimento%20para%20a%20categoria%20Caminh%C3%B5es." 
              target="_blank" 
              rel="noopener noreferrer"
              class="text-[11px] font-bold uppercase tracking-wider text-amber-400 hover:text-amber-300 flex items-center gap-1.5 pt-3 border-t border-white/5">
-            Saiba Mais <i class="fa-solid fa-chevron-right text-[9px]"></i>
+            Solicitar atendimento <i class="fa-solid fa-chevron-right text-[9px]"></i>
           </a>
         </div>
       </div>
 
-      <!-- 6. Máquinas e Agronegócio -->
+      <!-- 6. Máquinas e Equipamentos Agrícolas -->
       <div class="luxury-card rounded-2xl overflow-hidden flex flex-col justify-between group">
         <div class="relative h-44 overflow-hidden bg-black">
           <img src="https://images.unsplash.com/photo-1530267981375-f0de937f5f13?auto=format&fit=crop&w=800&q=80" 
@@ -332,58 +356,30 @@
                onerror="this.style.display='none'">
           <div class="absolute inset-0 bg-gradient-to-t from-[#101118] via-transparent to-black/30 pointer-events-none"></div>
           <span class="absolute top-3 left-3 bg-black/80 border border-amber-500/40 text-amber-400 text-[10px] font-bold px-2.5 py-1 rounded uppercase tracking-wider">
-            <i class="fa-solid fa-tractor mr-1"></i> Agro & Obra
+            <i class="fa-solid fa-tractor mr-1"></i> Agro & Construção
           </span>
         </div>
         <div class="p-5 flex flex-col justify-between flex-1">
           <div>
-            <h3 class="font-brand text-base font-bold text-white mb-2 tracking-wide">MÁQUINAS E AGRONEGÓCIO</h3>
+            <h3 class="font-brand text-base font-bold text-white mb-2 tracking-wide">MÁQUINAS E AGRÍCOLAS</h3>
             <p class="text-slate-400 text-xs leading-relaxed font-light mb-4">
-              Modernização de frotas com tratores, colheitadeiras e maquinários pesados através de consórcios e cartas de crédito rurais.
+              Crédito planejado para tratores, colheitadeiras, implementos agrícolas e maquinários pesados de infraestrutura rural.
             </p>
           </div>
-          <a href="https://wa.me/5562981956336?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20as%20condi%C3%A7%C3%B5es%20para%20M%C3%A1quinas%20e%20Agroneg%C3%B3cio." 
+          <a href="https://wa.me/5562981956336?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20atendimento%20para%20M%C3%A1quinas%20e%20Equipamentos%20Agr%C3%ADcolas." 
              target="_blank" 
              rel="noopener noreferrer"
              class="text-[11px] font-bold uppercase tracking-wider text-amber-400 hover:text-amber-300 flex items-center gap-1.5 pt-3 border-t border-white/5">
-            Saiba Mais <i class="fa-solid fa-chevron-right text-[9px]"></i>
+            Solicitar atendimento <i class="fa-solid fa-chevron-right text-[9px]"></i>
           </a>
         </div>
       </div>
 
-      <!-- 7. Utilitários -->
-      <div class="luxury-card rounded-2xl overflow-hidden flex flex-col justify-between group">
-        <div class="relative h-44 overflow-hidden bg-black">
-          <img src="https://images.unsplash.com/photo-1570125909232-eb263c188f7e?auto=format&fit=crop&w=800&q=80" 
-               alt="Utilitários" 
-               class="w-full h-full object-cover group-hover:scale-105 transition duration-500 opacity-85"
-               onerror="this.style.display='none'">
-          <div class="absolute inset-0 bg-gradient-to-t from-[#101118] via-transparent to-black/30 pointer-events-none"></div>
-          <span class="absolute top-3 left-3 bg-black/80 border border-amber-500/40 text-amber-400 text-[10px] font-bold px-2.5 py-1 rounded uppercase tracking-wider">
-            <i class="fa-solid fa-truck-ramp-box mr-1"></i> Linha Comercial
-          </span>
-        </div>
-        <div class="p-5 flex flex-col justify-between flex-1">
-          <div>
-            <h3 class="font-brand text-base font-bold text-white mb-2 tracking-wide">UTILITÁRIOS</h3>
-            <p class="text-slate-400 text-xs leading-relaxed font-light mb-4">
-              Vans, furgões e veículos comerciais leves para transporte de mercadorias, entregas urbanas e expansão de frotas.
-            </p>
-          </div>
-          <a href="https://wa.me/5562981956336?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20as%20condi%C3%A7%C3%B5es%20para%20Utilit%C3%A1rios." 
-             target="_blank" 
-             rel="noopener noreferrer"
-             class="text-[11px] font-bold uppercase tracking-wider text-amber-400 hover:text-amber-300 flex items-center gap-1.5 pt-3 border-t border-white/5">
-            Saiba Mais <i class="fa-solid fa-chevron-right text-[9px]"></i>
-          </a>
-        </div>
-      </div>
-
-      <!-- 8. Capital de Giro -->
+      <!-- 7. Capital de Giro -->
       <div class="luxury-card rounded-2xl overflow-hidden flex flex-col justify-between group">
         <div class="relative h-44 overflow-hidden bg-black">
           <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80" 
-               alt="Capital de Giro" 
+               alt="Capital de Giro Corporativo" 
                class="w-full h-full object-cover group-hover:scale-105 transition duration-500 opacity-85"
                onerror="this.style.display='none'">
           <div class="absolute inset-0 bg-gradient-to-t from-[#101118] via-transparent to-black/30 pointer-events-none"></div>
@@ -395,14 +391,14 @@
           <div>
             <h3 class="font-brand text-base font-bold text-white mb-2 tracking-wide">CAPITAL DE GIRO</h3>
             <p class="text-slate-400 text-xs leading-relaxed font-light mb-4">
-              Alavancagem estratégica para empresas, expansão de negócios e composição de fluxo financeiro planejado.
+              Estratégias de alavancagem para empresas, expansão de capacidade produtiva e suporte à liquidez operacional.
             </p>
           </div>
-          <a href="https://wa.me/5562981956336?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20as%20condi%C3%A7%C3%B5es%20para%20Capital%20de%20Giro." 
+          <a href="https://wa.me/5562981956336?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20atendimento%20para%20Capital%20de%20Giro." 
              target="_blank" 
              rel="noopener noreferrer"
              class="text-[11px] font-bold uppercase tracking-wider text-amber-400 hover:text-amber-300 flex items-center gap-1.5 pt-3 border-t border-white/5">
-            Saiba Mais <i class="fa-solid fa-chevron-right text-[9px]"></i>
+            Solicitar atendimento <i class="fa-solid fa-chevron-right text-[9px]"></i>
           </a>
         </div>
       </div>
@@ -410,25 +406,151 @@
     </div>
   </section>
 
-  <!-- 3. Seção Diferenciais -->
-  <section id="diferenciais" class="py-20 border-y border-white/5 bg-[#07070b]">
+  <!-- 3. Seção Como Funciona (Processo em 4 Etapas sem Promessas Irreais) -->
+  <section id="como-funciona" class="py-20 border-t border-white/5 bg-[#07070b]">
     <div class="max-w-7xl mx-auto px-6">
+      
+      <div class="text-center mb-16">
+        <span class="text-xs font-bold uppercase tracking-[0.25em] text-amber-400 block mb-2">Metodologia Transparente</span>
+        <h2 class="font-brand text-2xl md:text-3xl font-extrabold text-white">COMO FUNCIONA O ATENDIMENTO</h2>
+        <div class="w-16 h-0.5 bg-gradient-to-r from-transparent via-[#d99a38] to-transparent mx-auto mt-4"></div>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <div class="luxury-card p-6 rounded-2xl relative flex flex-col justify-between">
+          <div>
+            <span class="font-brand text-4xl font-black text-amber-400/20 block mb-3">01</span>
+            <h3 class="font-brand text-sm font-bold text-white mb-2 uppercase tracking-wide">Apresentação do Objetivo</h3>
+            <p class="text-slate-400 text-xs leading-relaxed font-light">
+              O cliente apresenta seu objetivo de compra, prazo desejado e disponibilidade financeira mensal.
+            </p>
+          </div>
+        </div>
+
+        <div class="luxury-card p-6 rounded-2xl relative flex flex-col justify-between">
+          <div>
+            <span class="font-brand text-4xl font-black text-amber-400/20 block mb-3">02</span>
+            <h3 class="font-brand text-sm font-bold text-white mb-2 uppercase tracking-wide">Identificação de Opções</h3>
+            <p class="text-slate-400 text-xs leading-relaxed font-light">
+              Nossa equipe identifica as possibilidades disponíveis entre administradoras conveniadas e autorizadas.
+            </p>
+          </div>
+        </div>
+
+        <div class="luxury-card p-6 rounded-2xl relative flex flex-col justify-between">
+          <div>
+            <span class="font-brand text-4xl font-black text-amber-400/20 block mb-3">03</span>
+            <h3 class="font-brand text-sm font-bold text-white mb-2 uppercase tracking-wide">Condições e Alternativas</h3>
+            <p class="text-slate-400 text-xs leading-relaxed font-light">
+              São apresentadas as condições, prazos, taxas e alternativas disponíveis para que o cliente decida com clareza.
+            </p>
+          </div>
+        </div>
+
+        <div class="luxury-card p-6 rounded-2xl relative flex flex-col justify-between">
+          <div>
+            <span class="font-brand text-4xl font-black text-amber-400/20 block mb-3">04</span>
+            <h3 class="font-brand text-sm font-bold text-white mb-2 uppercase tracking-wide">Orientação Contínua</h3>
+            <p class="text-slate-400 text-xs leading-relaxed font-light">
+              O cliente recebe orientação consultiva especializada durante todo o processo de adesão contratual.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Alerta Ético de Transparência -->
+      <div class="mt-10 p-4 rounded-xl border border-white/5 bg-black/40 text-center max-w-3xl mx-auto">
+        <p class="text-[11px] text-slate-400 font-light">
+          <i class="fa-solid fa-circle-info text-amber-400 mr-1.5"></i>
+          A contemplação em consórcios ocorre estritamente por meio de sorteios e lances nas assembleias oficiais realizadas pelas administradoras autorizadas pelo Banco Central, conforme a Lei Federal 11.795/2008. Não comercializamos cotas com garantia de contemplação prévia.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 4. Seção Sobre a Empresa (Texto Solicitado e Posicionamento) -->
+  <section id="sobre" class="max-w-6xl mx-auto px-6 py-20">
+    <div class="luxury-card p-8 md:p-14 rounded-3xl relative overflow-hidden">
+      
+      <div class="flex flex-col lg:flex-row gap-10 items-center">
+        
+        <div class="flex-1">
+          <span class="text-xs font-bold uppercase tracking-[0.25em] text-amber-400 block mb-2">Sobre a Brooklyn</span>
+          <h2 class="font-brand text-2xl md:text-3xl font-extrabold text-white mb-5 leading-snug">
+            BROOKLYN REPRESENTAÇÕES COMERCIAIS
+          </h2>
+          
+          <blockquote class="border-l-2 border-amber-400 pl-4 py-1 text-slate-200 text-sm md:text-base font-medium italic mb-6">
+            “A Brooklyn Representações Comerciais nasceu com o propósito de aproximar pessoas de soluções planejadas, oferecendo atendimento personalizado, transparência e acompanhamento em cada etapa da jornada.”
+          </blockquote>
+
+          <p class="text-slate-400 text-xs md:text-sm leading-relaxed font-light mb-4">
+            Com atuação focada em Goiânia e região metropolitana, nosso trabalho se fundamenta no planejamento financeiro consciente. Atuamos como elo estratégico entre os objetivos de nossos clientes e as mais respeitadas administradoras de consórcios do país.
+          </p>
+
+          <p class="text-slate-400 text-xs md:text-sm leading-relaxed font-light mb-8">
+            Rejeitamos abordagens generalistas e promessas imediatistas. Cada caso é recebido com estudo técnico aprofundado para assegurar que a contratação corresponda rigorosamente à capacidade patrimonial e às metas de longo prazo de cada contratante.
+          </p>
+
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a href="https://wa.me/5562981956336?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20atendimento%20presencial%20na%20Brooklyn%20Representa%C3%A7%C3%B5es." 
+               target="_blank" 
+               rel="noopener noreferrer"
+               class="gold-btn px-6 py-3.5 rounded-lg text-xs uppercase flex items-center justify-center gap-2">
+              <i class="fa-solid fa-handshake text-sm"></i> Agendar Atendimento Presencial
+            </a>
+          </div>
+        </div>
+
+        <!-- Pilares Institucionais (Sem Inventar Dados Fictícios) -->
+        <div class="w-full lg:w-72 flex flex-col gap-4">
+          <div class="p-4 rounded-xl border border-white/10 bg-black/50 text-center">
+            <i class="fa-solid fa-scale-balanced text-amber-400 text-xl mb-1"></i>
+            <h4 class="font-brand text-xs font-bold text-white uppercase tracking-wider">Conformidade Legal</h4>
+            <p class="text-[10px] text-slate-400 font-light mt-1">Atuação alinhada às normativas regulatórias do setor.</p>
+          </div>
+
+          <div class="p-4 rounded-xl border border-white/10 bg-black/50 text-center">
+            <i class="fa-solid fa-hand-holding-dollar text-amber-400 text-xl mb-1"></i>
+            <h4 class="font-brand text-xs font-bold text-white uppercase tracking-wider">Consultoria Individual</h4>
+            <p class="text-[10px] text-slate-400 font-light mt-1">Estudo individualizado sem modelos padronizados.</p>
+          </div>
+
+          <div class="p-4 rounded-xl border border-white/10 bg-black/50 text-center">
+            <i class="fa-solid fa-building-user text-amber-400 text-xl mb-1"></i>
+            <h4 class="font-brand text-xs font-bold text-white uppercase tracking-wider">Presença Local</h4>
+            <p class="text-[10px] text-slate-400 font-light mt-1">Escritório estruturado em Goiânia - GO.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 5. Seção Diferenciais -->
+  <section id="diferenciais" class="py-20 border-t border-white/5 bg-[#06060a]">
+    <div class="max-w-7xl mx-auto px-6">
+      
       <div class="text-center mb-14">
-        <span class="text-xs font-bold uppercase tracking-[0.25em] text-amber-400 block mb-2">Por que escolher a Brooklyn</span>
+        <span class="text-xs font-bold uppercase tracking-[0.25em] text-amber-400 block mb-2">Compromisso Corporativo</span>
         <h2 class="font-brand text-2xl md:text-3xl font-extrabold text-white">NOSSOS DIFERENCIAIS</h2>
         <div class="w-16 h-0.5 bg-gradient-to-r from-transparent via-[#d99a38] to-transparent mx-auto mt-4"></div>
       </div>
 
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="grid md:grid-cols-3 gap-6">
         
         <div class="luxury-card p-6 rounded-xl flex items-start gap-4">
           <div class="w-12 h-12 rounded-lg bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 text-xl shrink-0">
-            <i class="fa-solid fa-user-check"></i>
+            <i class="fa-solid fa-user-tie"></i>
           </div>
           <div>
-            <h3 class="font-brand text-sm font-bold text-white uppercase tracking-wider mb-1">Atendimento Personalizado</h3>
+            <h3 class="font-brand text-sm font-bold text-white uppercase tracking-wider mb-1">Atendimento Presencial</h3>
             <p class="text-slate-400 text-xs leading-relaxed font-light">
-              Análise detalhada do seu momento para propor a alternativa mais vantajosa entre consórcios, financiamentos ou cartas contempladas.
+              Recebemos nossos clientes em Goiânia para esclarecer pormenorizadamente cada detalhe das propostas.
             </p>
           </div>
         </div>
@@ -440,232 +562,38 @@
           <div>
             <h3 class="font-brand text-sm font-bold text-white uppercase tracking-wider mb-1">Planejamento Estratégico</h3>
             <p class="text-slate-400 text-xs leading-relaxed font-light">
-              Estruturação inteligente de prazos, lances e valores para maximizar seu potencial de aquisição.
+              Análise comparativa de prazos, taxas e modalidades antes da efetivação de qualquer compromisso.
             </p>
           </div>
         </div>
 
         <div class="luxury-card p-6 rounded-xl flex items-start gap-4">
           <div class="w-12 h-12 rounded-lg bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 text-xl shrink-0">
-            <i class="fa-solid fa-magnifying-glass-chart"></i>
+            <i class="fa-solid fa-eye"></i>
           </div>
           <div>
-            <h3 class="font-brand text-sm font-bold text-white uppercase tracking-wider mb-1">Análise de Possibilidades</h3>
+            <h3 class="font-brand text-sm font-bold text-white uppercase tracking-wider mb-1">Transparência Integral</h3>
             <p class="text-slate-400 text-xs leading-relaxed font-light">
-              Avaliação de mercado transparente para identificar as opções mais econômicas para o seu objetivo.
+              Comunicação fidedigna sobre o funcionamento das assembleias, regras de cancelamento e custos envolvidos.
             </p>
           </div>
         </div>
 
-        <div class="luxury-card p-6 rounded-xl flex items-start gap-4">
-          <div class="w-12 h-12 rounded-lg bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 text-xl shrink-0">
-            <i class="fa-solid fa-shield-halved"></i>
-          </div>
-          <div>
-            <h3 class="font-brand text-sm font-bold text-white uppercase tracking-wider mb-1">Acompanhamento Especializado</h3>
-            <p class="text-slate-400 text-xs leading-relaxed font-light">
-              Suporte contínuo com orientações profissionais em todas as etapas contratuais.
-            </p>
-          </div>
-        </div>
-
-        <div class="luxury-card p-6 rounded-xl flex items-start gap-4">
-          <div class="w-12 h-12 rounded-lg bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 text-xl shrink-0">
-            <i class="fa-solid fa-building"></i>
-          </div>
-          <div>
-            <h3 class="font-brand text-sm font-bold text-white uppercase tracking-wider mb-1">Atendimento Presencial</h3>
-            <p class="text-slate-400 text-xs leading-relaxed font-light">
-              Ambiente estruturado para reuniões corporativas e atendimento direto com nossos consultores.
-            </p>
-          </div>
-        </div>
-
-        <div class="luxury-card p-6 rounded-xl flex items-start gap-4">
-          <div class="w-12 h-12 rounded-lg bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 text-xl shrink-0">
-            <i class="fa-solid fa-cubes"></i>
-          </div>
-          <div>
-            <h3 class="font-brand text-sm font-bold text-white uppercase tracking-wider mb-1">Soluções Diversificadas</h3>
-            <p class="text-slate-400 text-xs leading-relaxed font-light">
-              Portfólio multissetorial atendendo pessoas físicas, frotistas, produtores rurais e empresas.
-            </p>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- 4. Seção Como Funciona -->
-  <section id="como-funciona" class="max-w-7xl mx-auto px-6 py-20">
-    <div class="text-center mb-16">
-      <span class="text-xs font-bold uppercase tracking-[0.25em] text-amber-400 block mb-2">Processo Transparente</span>
-      <h2 class="font-brand text-2xl md:text-3xl font-extrabold text-white">COMO FUNCIONA</h2>
-      <div class="w-16 h-0.5 bg-gradient-to-r from-transparent via-[#d99a38] to-transparent mx-auto mt-4"></div>
-    </div>
-
-    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-      
-      <div class="luxury-card p-6 rounded-2xl relative flex flex-col justify-between">
-        <span class="font-brand text-4xl font-black text-amber-400/20 block mb-4">01</span>
-        <h3 class="font-brand text-sm font-bold text-white mb-2 uppercase tracking-wide">Apresentação do Objetivo</h3>
-        <p class="text-slate-400 text-xs leading-relaxed font-light">
-          Você apresenta seu objetivo e as diretrizes patrimoniais que deseja alcançar.
-        </p>
-      </div>
-
-      <div class="luxury-card p-6 rounded-2xl relative flex flex-col justify-between">
-        <span class="font-brand text-4xl font-black text-amber-400/20 block mb-4">02</span>
-        <h3 class="font-brand text-sm font-bold text-white mb-2 uppercase tracking-wide">Identificação de Opções</h3>
-        <p class="text-slate-400 text-xs leading-relaxed font-light">
-          Nossa equipe avalia o cenário e identifica as possibilidades reais entre consórcios, financiamentos ou cartas de crédito.
-        </p>
-      </div>
-
-      <div class="luxury-card p-6 rounded-2xl relative flex flex-col justify-between">
-        <span class="font-brand text-4xl font-black text-amber-400/20 block mb-4">03</span>
-        <h3 class="font-brand text-sm font-bold text-white mb-2 uppercase tracking-wide">Apresentação de Condições</h3>
-        <p class="text-slate-400 text-xs leading-relaxed font-light">
-          Apresentamos as condições, prazos e alternativas disponíveis com clareza integral.
-        </p>
-      </div>
-
-      <div class="luxury-card p-6 rounded-2xl relative flex flex-col justify-between">
-        <span class="font-brand text-4xl font-black text-amber-400/20 block mb-4">04</span>
-        <h3 class="font-brand text-sm font-bold text-white mb-2 uppercase tracking-wide">Acompanhamento Contínuo</h3>
-        <p class="text-slate-400 text-xs leading-relaxed font-light">
-          Você recebe acompanhamento especializado durante todo o processo de adesão e contratação.
-        </p>
       </div>
 
     </div>
   </section>
 
-  <!-- 5. Seção Quem Somos -->
-  <section id="quem-somos" class="py-20 border-t border-white/5 bg-[#06060a]">
-    <div class="max-w-5xl mx-auto px-6">
-      <div class="luxury-card p-8 md:p-12 rounded-3xl relative overflow-hidden">
-        
-        <div class="flex flex-col md:flex-row gap-8 items-center">
-          <div class="flex-1">
-            <span class="text-xs font-bold uppercase tracking-[0.25em] text-amber-400 block mb-2">Institucional</span>
-            <h2 class="font-brand text-2xl md:text-3xl font-extrabold text-white mb-4">
-              BROOKLYN REPRESENTAÇÕES COMERCIAIS
-            </h2>
-            <p class="text-slate-300 text-xs md:text-sm leading-relaxed font-light mb-4">
-              A <strong>BROOKLYN REPRESENTAÇÕES COMERCIAIS</strong> é uma empresa de representação comercial especializada em <strong>consórcios, financiamentos e cartas de crédito</strong>. Nossa atuação combina rigor operacional, conformidade regulatória e proximidade consultiva.
-            </p>
-            <p class="text-slate-400 text-xs leading-relaxed font-light mb-6">
-              Nosso compromisso fundamental é apresentar alternativas estruturadas para a aquisição de bens móveis, imóveis e capital de expansão, com total transparência, seriedade e foco nas necessidades reais de cada cliente.
-            </p>
-            
-            <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 pt-4 border-t border-white/10 text-center">
-              <div>
-                <span class="font-brand font-bold text-amber-400 text-lg block">Ética</span>
-                <span class="text-[10px] text-slate-500 uppercase tracking-wider">Transparência Total</span>
-              </div>
-              <div>
-                <span class="font-brand font-bold text-amber-400 text-lg block">Conformidade</span>
-                <span class="text-[10px] text-slate-500 uppercase tracking-wider">Normas do Setor</span>
-              </div>
-              <div class="col-span-2 sm:col-span-1">
-                <span class="font-brand font-bold text-amber-400 text-lg block">Assessoria</span>
-                <span class="text-[10px] text-slate-500 uppercase tracking-wider">Foco no Cliente</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- 6. Seção Depoimentos (Com Fotos Reais de Clientes) -->
-  <section id="depoimentos" class="max-w-6xl mx-auto px-6 py-20">
-    <div class="text-center mb-14">
-      <span class="text-xs font-bold uppercase tracking-[0.25em] text-amber-400 block mb-2">Avaliações e Confiança</span>
-      <h2 class="font-brand text-2xl md:text-3xl font-extrabold text-white">O QUE DIZEM NOSSOS CLIENTES</h2>
-      <div class="w-16 h-0.5 bg-gradient-to-r from-transparent via-[#d99a38] to-transparent mx-auto mt-4"></div>
-    </div>
-
-    <div class="grid md:grid-cols-3 gap-6">
-      
-      <!-- Depoimento 1: Imóveis / Residencial -->
-      <div class="luxury-card p-6 rounded-2xl flex flex-col justify-between">
-        <div>
-          <div class="flex items-center gap-1 text-amber-400 text-xs mb-4">
-            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-          </div>
-          <p class="text-slate-300 text-xs leading-relaxed font-light mb-6">
-            "Fui atendido de forma impecável pela equipe da Brooklyn. Eles me explicaram com clareza a diferença entre o financiamento e a carta de crédito para compra do meu apartamento em condomínio fechado. Planejamento sério e seguro."
-          </p>
-        </div>
-        <div class="pt-4 border-t border-white/5 flex items-center gap-3">
-          <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80" 
-               alt="Juliana Mendes" 
-               class="w-11 h-11 rounded-full object-cover border border-amber-500/40 shrink-0">
-          <div>
-            <span class="text-xs font-bold text-white block">Juliana Mendes</span>
-            <span class="text-[10px] text-amber-400/90 font-medium">Aquisição de Imóvel Residencial</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Depoimento 2: Frotista / Pesados -->
-      <div class="luxury-card p-6 rounded-2xl flex flex-col justify-between">
-        <div>
-          <div class="flex items-center gap-1 text-amber-400 text-xs mb-4">
-            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-          </div>
-          <p class="text-slate-300 text-xs leading-relaxed font-light mb-6">
-            "Trabalho com transporte rodoviário e precisava renovar dois cavalos mecânicos da minha empresa. O atendimento presencial fez toda a diferença: transparência sobre as parcelas e sem falsas promessas de contemplação rápida."
-          </p>
-        </div>
-        <div class="pt-4 border-t border-white/5 flex items-center gap-3">
-          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80" 
-               alt="Carlos Eduardo Rocha" 
-               class="w-11 h-11 rounded-full object-cover border border-amber-500/40 shrink-0">
-          <div>
-            <span class="text-xs font-bold text-white block">Carlos Eduardo Rocha</span>
-            <span class="text-[10px] text-amber-400/90 font-medium">Linha Pesada & Frotas</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Depoimento 3: Veículos / Seminovos -->
-      <div class="luxury-card p-6 rounded-2xl flex flex-col justify-between">
-        <div>
-          <div class="flex items-center gap-1 text-amber-400 text-xs mb-4">
-            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-          </div>
-          <p class="text-slate-300 text-xs leading-relaxed font-light mb-6">
-            "O consultor da Brooklyn me ajudou a escolher o grupo de consórcio ideal para a troca do meu veículo particular. Consegui ofertar meu lance no tempo planejado e retirei o carro sem pagar juros bancários exorbitantes."
-          </p>
-        </div>
-        <div class="pt-4 border-t border-white/5 flex items-center gap-3">
-          <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80" 
-               alt="Rodrigo Santana" 
-               class="w-11 h-11 rounded-full object-cover border border-amber-500/40 shrink-0">
-          <div>
-            <span class="text-xs font-bold text-white block">Rodrigo Santana</span>
-            <span class="text-[10px] text-amber-400/90 font-medium">Veículo Seminovo</span>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- 7. Formulário de Conversão Rápida & Agendamento -->
+  <!-- 6. Formulário de Conversão Rápida -->
   <section class="py-16 border-t border-white/5 bg-[#07070b]">
     <div class="max-w-3xl mx-auto px-6">
       <div class="luxury-card p-8 md:p-10 rounded-2xl">
+        
         <div class="text-center mb-8">
-          <span class="text-xs font-bold uppercase tracking-[0.25em] text-amber-400 block mb-1">Início Imediato</span>
-          <h2 class="font-brand text-2xl font-black text-white">QUAL O SEU OBJETIVO PATRIMONIAL?</h2>
+          <span class="text-xs font-bold uppercase tracking-[0.25em] text-amber-400 block mb-1">Atendimento Rápido</span>
+          <h2 class="font-brand text-2xl font-black text-white">SOLICITAR ATENDIMENTO</h2>
           <p class="text-slate-400 text-xs mt-2 font-light">
-            Selecione seu objetivo para falar diretamente com nosso especialista via WhatsApp.
+            Preencha seus dados para conectar-se diretamente com um especialista da Brooklyn via WhatsApp.
           </p>
         </div>
 
@@ -682,8 +610,8 @@
                     class="w-full bg-[#050508] border border-white/10 rounded-lg px-4 py-3 text-sm text-slate-200 focus:outline-none focus:border-amber-400 transition">
               <option value="Consórcio">Consórcio</option>
               <option value="Financiamento">Financiamento</option>
-              <option value="Carta de Crédito Contemplada">Carta de Crédito</option>
-              <option value="Atendimento Presencial">Agendar Atendimento Presencial</option>
+              <option value="Carta de Crédito">Carta de Crédito</option>
+              <option value="Atendimento Presencial em Goiânia">Agendamento Presencial em Goiânia</option>
             </select>
           </div>
 
@@ -691,48 +619,48 @@
             <label for="lead-objetivo" class="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-1.5">Categoria do Bem</label>
             <select id="lead-objetivo" required 
                     class="w-full bg-[#050508] border border-white/10 rounded-lg px-4 py-3 text-sm text-slate-200 focus:outline-none focus:border-amber-400 transition">
-              <option value="Carros e Seminovos">Carros e Seminovos</option>
+              <option value="Automóveis">Automóveis</option>
               <option value="Motocicletas">Motocicletas</option>
-              <option value="Casas e Apartamentos">Casas e Apartamentos</option>
-              <option value="Terrenos e Lotes">Terrenos e Lotes</option>
-              <option value="Caminhões e Veículos Pesados">Caminhões e Veículos Pesados</option>
-              <option value="Máquinas e Agronegócio">Máquinas e Agronegócio</option>
-              <option value="Utilitários">Utilitários</option>
+              <option value="Imóveis">Imóveis</option>
+              <option value="Terrenos">Terrenos</option>
+              <option value="Caminhões">Caminhões</option>
+              <option value="Máquinas e Agrícolas">Máquinas e Agrícolas</option>
               <option value="Capital de Giro">Capital de Giro</option>
             </select>
           </div>
 
           <button type="submit" class="gold-btn w-full py-4 rounded-lg text-xs uppercase font-extrabold flex items-center justify-center gap-2 mt-4">
             <i class="fa-brands fa-whatsapp text-base"></i>
-            <span>Falar com Especialista no WhatsApp</span>
+            <span>Solicitar atendimento no WhatsApp</span>
           </button>
         </form>
+
       </div>
     </div>
   </section>
 
-  <!-- 8. Contato e Localização Corporativa -->
+  <!-- 7. Contato e Localização Corporativa -->
   <section id="contato" class="max-w-7xl mx-auto px-6 py-20 border-t border-white/5">
     <div class="text-center mb-14">
-      <span class="text-xs font-bold uppercase tracking-[0.25em] text-amber-400 block mb-2">Canais de Atendimento</span>
+      <span class="text-xs font-bold uppercase tracking-[0.25em] text-amber-400 block mb-2">Canais Oficiais</span>
       <h2 class="font-brand text-2xl md:text-3xl font-extrabold text-white">CONTATO E LOCALIZAÇÃO</h2>
       <div class="w-16 h-0.5 bg-gradient-to-r from-transparent via-[#d99a38] to-transparent mx-auto mt-4"></div>
     </div>
 
     <div class="grid md:grid-cols-2 gap-8 items-start">
       
-      <!-- Informações Corporativas -->
+      <!-- Dados Oficiais da Empresa -->
       <div class="luxury-card p-8 rounded-2xl space-y-6">
         <div>
           <h3 class="font-brand text-lg font-bold text-white mb-1">BROOKLYN REPRESENTAÇÕES COMERCIAIS</h3>
-          <p class="text-slate-400 text-xs font-light">Especialistas em consórcios, financiamentos e cartas de crédito.</p>
+          <p class="text-slate-400 text-xs font-light">Representação comercial especializada em Goiânia – GO.</p>
         </div>
 
         <div class="space-y-4 text-xs">
           <div class="flex items-start gap-3">
             <i class="fa-brands fa-whatsapp text-emerald-400 text-base mt-0.5 shrink-0"></i>
             <div>
-              <span class="block text-slate-400 uppercase text-[10px] tracking-wider">WhatsApp Oficial</span>
+              <span class="block text-slate-400 uppercase text-[10px] tracking-wider">WhatsApp Comercial</span>
               <a href="https://wa.me/5562981956336" target="_blank" rel="noopener noreferrer" class="text-slate-200 hover:text-amber-400 font-semibold transition">
                 (62) 98195-6336
               </a>
@@ -740,18 +668,10 @@
           </div>
 
           <div class="flex items-start gap-3">
-            <i class="fa-solid fa-phone text-amber-400 text-sm mt-0.5 shrink-0"></i>
-            <div>
-              <span class="block text-slate-400 uppercase text-[10px] tracking-wider">Telefone Comercial</span>
-              <span class="text-slate-200 font-semibold">(62) 98195-6336</span>
-            </div>
-          </div>
-
-          <div class="flex items-start gap-3">
             <i class="fa-solid fa-location-dot text-amber-400 text-sm mt-0.5 shrink-0"></i>
             <div>
-              <span class="block text-slate-400 uppercase text-[10px] tracking-wider">Endereço da Empresa</span>
-              <span class="text-slate-200">Goiânia - GO | Atendimento Corporativo</span>
+              <span class="block text-slate-400 uppercase text-[10px] tracking-wider">Localização</span>
+              <span class="text-slate-200">Goiânia – Goiás (Atendimento presencial sob agendamento)</span>
             </div>
           </div>
 
@@ -784,18 +704,18 @@
         </div>
       </div>
 
-      <!-- Card de Agendamento Presencial -->
+      <!-- Card Consultivo de Atendimento Presencial -->
       <div class="luxury-card p-8 rounded-2xl flex flex-col justify-between h-full">
         <div>
-          <span class="text-xs font-bold uppercase tracking-[0.2em] text-amber-400 block mb-2">Exclusividade</span>
+          <span class="text-xs font-bold uppercase tracking-[0.2em] text-amber-400 block mb-2">Goiânia e Região</span>
           <h3 class="font-brand text-xl font-black text-white mb-3">ATENDIMENTO PRESENCIAL</h3>
           <p class="text-slate-300 text-xs leading-relaxed font-light mb-6">
-            Para clientes que buscam uma análise estratégica e reservada para o planejamento de consórcio, financiamento ou carta de crédito, disponibilizamos atendimento presencial com nossos consultores.
+            Priorizamos a segurança e a clareza de nossos clientes. Realizamos reuniões presenciais para apresentação técnica de alternativas, conferência de documentação e análise de viabilidade financeira.
           </p>
           <ul class="space-y-3 text-xs text-slate-400 font-light mb-8">
-            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-400 text-[10px]"></i> Ambiente corporativo reservado</li>
-            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-400 text-[10px]"></i> Simulação comparativa de modalidades</li>
-            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-400 text-[10px]"></i> Agendamento prévio com consultor dedicado</li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-400 text-[10px]"></i> Estrutura reservada para reuniões corporativas</li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-400 text-[10px]"></i> Esclarecimento de dúvidas sobre regras e sorteios</li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-400 text-[10px]"></i> Análise personalizada para pessoas físicas e jurídicas</li>
           </ul>
         </div>
 
@@ -803,52 +723,108 @@
            target="_blank" 
            rel="noopener noreferrer"
            class="gold-btn w-full py-3.5 rounded-lg text-xs uppercase flex items-center justify-center gap-2">
-          <i class="fa-solid fa-calendar-check text-sm"></i> Agendar Atendimento Presencial
+          <i class="fa-solid fa-calendar-check text-sm"></i> Quero falar com um especialista
         </a>
       </div>
 
     </div>
   </section>
 
-  <!-- Rodapé Institucional com Menção BACEN -->
+  <!-- 8. Rodapé Institucional e Legal -->
   <footer class="border-t border-white/5 py-12 bg-[#020204] text-center text-slate-500">
     <div class="max-w-6xl mx-auto px-6 flex flex-col items-center gap-6">
       
+      <!-- Marca -->
       <div class="flex items-center justify-center gap-2">
         <span class="font-brand font-bold gold-gradient-text text-sm tracking-wider">BROOKLYN</span>
         <span class="text-slate-600">|</span>
         <span class="uppercase tracking-widest text-[9px] text-slate-400">Representações Comerciais</span>
       </div>
 
-      <div class="max-w-2xl text-[10px] leading-relaxed text-slate-500 font-light">
-        <p class="flex items-center justify-center gap-1.5 text-slate-400 font-medium mb-1">
-          <i class="fa-solid fa-building-columns text-amber-400/80 text-[10px]"></i>
-          Instituição autorizada e fiscalizada pelo Banco Central do Brasil.
+      <!-- Esclarecimento Legal / Compliance BACEN -->
+      <div class="max-w-3xl text-[10px] leading-relaxed text-slate-500 font-light space-y-2">
+        <p class="text-slate-400 font-medium">
+          A <strong>BROOKLYN REPRESENTAÇÕES COMERCIAIS</strong> é uma empresa de representação comercial e consultoria estratégica, intermediando o acesso a cotas de consórcios, financiamentos e soluções patrimoniais administradas por administradoras legalmente autorizadas e fiscalizadas pelo Banco Central do Brasil (BACEN).
         </p>
-        <p class="text-slate-600 text-[9px]">
-          Atuação em representação comercial de consórcios, financiamentos e soluções financeiras em conformidade com as diretrizes e normas do Banco Central do Brasil (BACEN). Não realizamos promessas de contemplação imediata ou garantia de liberação sem análise. Todas as operações seguem rigorosamente a legislação do setor.
+        <p class="text-slate-600">
+          A Brooklyn não é administradora de consórcios nem instituição bancária direta. Não prometemos contemplação imediata, aprovação automática de crédito ou prazos pré-determinados para liberação de recursos. Todas as operações estão sujeitas à análise de crédito e aos regulamentos oficiais dos respectivos grupos de consórcios e instituições financeiras parceiras.
         </p>
       </div>
 
-      <p class="text-[9.5px] text-slate-600">
-        © 2026 BROOKLYN REPRESENTAÇÕES COMERCIAIS. Todos os direitos reservados.
-      </p>
+      <!-- Links de Privacidade e Termos -->
+      <div class="flex gap-6 text-[11px] text-slate-400">
+        <button onclick="toggleModal('modal-privacidade')" class="hover:text-amber-400 transition underline underline-offset-4">Política de Privacidade</button>
+        <button onclick="toggleModal('modal-termos')" class="hover:text-amber-400 transition underline underline-offset-4">Termos de Uso</button>
+      </div>
+
+      <!-- Copyright e Localização -->
+      <div class="text-[9.5px] text-slate-600">
+        <p>© 2026 BROOKLYN REPRESENTAÇÕES COMERCIAIS. Todos os direitos reservados.</p>
+        <p class="mt-0.5">Goiânia – Goiás | Atendimento Regional Especializado</p>
+      </div>
 
     </div>
   </footer>
 
-  <!-- Script de Envio Rápido do Formulário para WhatsApp -->
+  <!-- Modal Política de Privacidade -->
+  <div id="modal-privacidade" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden flex items-center justify-center p-4">
+    <div class="luxury-card p-6 md:p-8 rounded-2xl max-w-lg w-full max-h-[80vh] overflow-y-auto text-left">
+      <div class="flex justify-between items-center mb-4 border-b border-white/10 pb-2">
+        <h3 class="font-brand text-sm font-bold text-white uppercase">Política de Privacidade</h3>
+        <button onclick="toggleModal('modal-privacidade')" class="text-slate-400 hover:text-white text-lg"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <div class="text-xs text-slate-300 space-y-3 font-light leading-relaxed">
+        <p>A BROOKLYN REPRESENTAÇÕES COMERCIAIS respeita a privacidade de seus visitantes e clientes, atuando em estrita conformidade com a Lei Geral de Proteção de Dados (Lei 13.709/2018 - LGPD).</p>
+        <p><strong>Uso de Informações:</strong> As informações fornecidas através de nossos formulários de contato são utilizadas unicamente para retorno consultivo e apresentação das soluções solicitadas pelo titular.</p>
+        <p><strong>Não Compartilhamento:</strong> Seus dados de contato não são comercializados ou repassados a terceiros alheios aos trâmites operacionais das administradoras parceiras necessárias à contratação do serviço por você requisitado.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Termos de Uso -->
+  <div id="modal-termos" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden flex items-center justify-center p-4">
+    <div class="luxury-card p-6 md:p-8 rounded-2xl max-w-lg w-full max-h-[80vh] overflow-y-auto text-left">
+      <div class="flex justify-between items-center mb-4 border-b border-white/10 pb-2">
+        <h3 class="font-brand text-sm font-bold text-white uppercase">Termos de Uso</h3>
+        <button onclick="toggleModal('modal-termos')" class="text-slate-400 hover:text-white text-lg"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <div class="text-xs text-slate-300 space-y-3 font-light leading-relaxed">
+        <p>Este portal é de caráter puramente institucional e consultivo. A BROOKLYN REPRESENTAÇÕES COMERCIAIS atua exclusivamente na qualidade de representante comercial autônoma.</p>
+        <p><strong>Ausência de Garantia de Contemplação:</strong> A aquisição de cotas de consórcios não garante data pré-fixada de contemplação, a qual depende estritamente de sorteios e lances conforme as assembleias oficiais das administradoras autorizadas pelo BACEN.</p>
+        <p><strong>Informações Contratuais:</strong> Todos os valores, prazos, taxas de administração e fundos de reserva são definidos pelos contratos das administradoras conveniadas, prevalecendo sempre o instrumento formal firmado pelo contratante.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Script de Envio do Formulário e Controle dos Modais -->
   <script>
     function handleLeadSubmit(event) {
       event.preventDefault();
       const nome = document.getElementById('lead-nome').value.trim();
       const modalidade = document.getElementById('lead-modalidade').value;
       const objetivo = document.getElementById('lead-objetivo').value;
-      const texto = encodeURIComponent(`Olá! Meu nome é ${nome}. Tenho interesse em ${modalidade} para a categoria ${objetivo}. Gostaria de receber atendimento com a Brooklyn Representações.`);
+      const texto = encodeURIComponent(`Olá! Meu nome é ${nome}. Gostaria de solicitar atendimento para ${modalidade} na categoria ${objetivo} com a Brooklyn Representações.`);
       window.open(`https://wa.me/5562981956336?text=${texto}`, '_blank');
+    }
+
+    function toggleModal(id) {
+      const modal = document.getElementById(id);
+      if (modal) {
+        modal.classList.toggle('hidden');
+      }
     }
   </script>
 
 </body>
 </html>
 ```[cite: 4]
+
+---
+
+### Como Publicar no GitHub:
+1. Abra o arquivo **`index.html`** no seu repositório no GitHub[cite: 4].
+2. Clique no ícone do lápis (**Edit this file**)[cite: 4].
+3. Selecione todo o conteúdo existente com **Ctrl + A**, apague e cole o código acima.
+4. Clique no botão verde **Commit changes...** e confirme[cite: 4].
+5. Em 1 minuto o site estará publicado e atualizado com o posicionamento institucional em:  
+   `[https://brooklynrepresentacaocomercial-netizen.github.io/brooklyn.comercial./](https://brooklynrepresentacaocomercial-netizen.github.io/brooklyn.comercial./)`[cite: 6]
